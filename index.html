@@ -27,17 +27,6 @@
     --text-dim:   #888070;
     --text-muted: #555045;
     --border:     #333025;
-
-    --region-varlamore:  #7b3f9e;
-    --region-karamja:    #2d7a3a;
-    --region-asgarnia:   #1a5fa8;
-    --region-desert:     #a86e1a;
-    --region-fremennik:  #2a6b7c;
-    --region-kandarin:   #4a7a2a;
-    --region-kourend:    #6b2a6b;
-    --region-morytania:  #5a2020;
-    --region-tirannwn:   #1e6b4a;
-    --region-wilderness: #6b3a1a;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,12 +40,7 @@
     overflow: hidden;
   }
 
-  /* ── Layout ── */
-  #app {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
+  #app { display: flex; flex-direction: column; height: 100vh; }
 
   /* ── Header ── */
   #header {
@@ -75,34 +59,16 @@
     color: var(--gold);
     letter-spacing: 0.04em;
   }
-  #header-text p {
-    font-size: 10px;
-    color: var(--text-dim);
-    margin-top: 1px;
-  }
-  #header-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  #generated-time {
-    font-size: 10px;
-    color: var(--text-muted);
-    text-align: right;
-    line-height: 1.5;
-  }
+  #header-text p { font-size: 10px; color: var(--text-dim); margin-top: 1px; }
+  #header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; }
+  #generated-time { font-size: 10px; color: var(--text-muted); text-align: right; line-height: 1.5; }
 
   /* ── Body ── */
-  #body {
-    display: flex;
-    flex: 1;
-    overflow: hidden;
-  }
+  #body { display: flex; flex: 1; overflow: hidden; }
 
   /* ── Sidebar ── */
   #sidebar {
-    width: 220px;
+    width: 228px;
     background: var(--bg-panel);
     border-right: 1px solid var(--border);
     display: flex;
@@ -116,42 +82,80 @@
   #sidebar::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
 
   .sb-section {
-    font-size: 9px;
-    font-weight: bold;
-    color: var(--gold-dim);
-    letter-spacing: 0.08em;
-    padding: 14px 14px 4px;
+    font-size: 9px; font-weight: bold; color: var(--gold-dim);
+    letter-spacing: 0.08em; padding: 14px 14px 4px;
   }
-  .sb-divider {
-    height: 1px;
-    background: var(--border);
-    margin: 8px 10px;
+  .sb-divider { height: 1px; background: var(--border); margin: 8px 10px; }
+
+  /* Pages row */
+  .pages-row {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0 12px 6px;
+    font-size: 10px; color: var(--text-dim);
+  }
+  .pages-row input {
+    width: 46px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-white);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    padding: 3px 6px;
+    outline: none;
+    text-align: center;
+  }
+  .pages-row input:focus { border-color: var(--gold-dim); }
+
+  /* Fetch buttons */
+  .fetch-btn {
+    display: block;
+    width: calc(100% - 24px);
+    margin: 0 12px 4px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: filter 0.15s, opacity 0.15s;
+  }
+  .fetch-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .fetch-btn:not(:disabled):hover { filter: brightness(1.2); }
+  #btn-fetch-lb  { background: var(--red);   color: #ffcccc; }
+  #btn-fetch-reg { background: var(--green);  color: #ccffcc; }
+
+  /* Progress bar */
+  #progress-wrap {
+    margin: 0 12px 10px;
+    height: 5px;
+    background: var(--bg-card);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  #progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--gold);
+    border-radius: 3px;
+    transition: width 0.2s;
   }
 
-  /* Match mode radios */
-  .match-mode {
-    display: flex;
-    gap: 10px;
-    padding: 0 14px 8px;
-  }
+  /* Match mode */
+  .match-mode { display: flex; gap: 10px; padding: 0 14px 8px; }
   .match-mode label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    color: var(--text-dim);
-    font-size: 10px;
+    display: flex; align-items: center; gap: 5px;
+    cursor: pointer; color: var(--text-dim); font-size: 10px;
   }
   .match-mode input[type=radio] { accent-color: var(--gold); }
 
   /* Region checkboxes */
   #region-list {
     padding: 4px 10px 6px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    max-height: 300px;
-    overflow-y: auto;
+    display: flex; flex-direction: column; gap: 3px;
+    max-height: 280px; overflow-y: auto;
     background: var(--bg-card);
     margin: 0 12px 6px;
     border-radius: 4px;
@@ -161,18 +165,14 @@
   #region-list::-webkit-scrollbar-thumb { background: var(--gold-dim); }
 
   .region-cb {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    cursor: pointer;
-    padding: 2px 0;
-    color: var(--text-white);
-    font-size: 10px;
+    display: flex; align-items: center; gap: 7px;
+    cursor: pointer; padding: 2px 0;
+    color: var(--text-white); font-size: 10px;
   }
   .region-cb input[type=checkbox] { accent-color: var(--gold); width: 13px; height: 13px; }
   .region-cb .star { color: var(--gold); }
 
-  /* Sidebar buttons */
+  /* Generic sidebar button */
   .sb-btn {
     display: block;
     width: calc(100% - 24px);
@@ -184,30 +184,22 @@
     color: var(--text-dim);
     font-family: 'Share Tech Mono', monospace;
     font-size: 10px;
-    cursor: pointer;
-    text-align: left;
+    cursor: pointer; text-align: left;
     transition: background 0.15s, color 0.15s;
   }
   .sb-btn:hover { background: var(--bg-hover); color: var(--text-white); }
 
   /* ── Main content ── */
   #content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background: var(--bg-dark);
+    flex: 1; display: flex; flex-direction: column;
+    overflow: hidden; background: var(--bg-dark);
   }
   .gold-bar { height: 2px; background: var(--gold-dim); flex-shrink: 0; }
 
-  /* Search + stats bar */
   #top-bar {
     background: var(--bg-panel);
-    padding: 0 14px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    padding: 0 14px; height: 42px;
+    display: flex; align-items: center; gap: 10px;
     flex-shrink: 0;
   }
   #top-bar .icon { color: var(--text-dim); font-size: 13px; }
@@ -218,24 +210,16 @@
     padding: 5px 10px;
     color: var(--text-white);
     font-family: 'Share Tech Mono', monospace;
-    font-size: 11px;
-    width: 210px;
-    outline: none;
+    font-size: 11px; width: 210px; outline: none;
   }
   #search-input::placeholder { color: var(--text-muted); }
   #search-input:focus { border-color: var(--gold-dim); }
-  #count-label { color: var(--text-dim); font-size: 10px; }
+  #count-label  { color: var(--text-dim); font-size: 10px; }
   #region-label { color: var(--text-dim); font-size: 10px; }
 
   /* ── Table ── */
-  #table-wrap {
-    flex: 1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+  #table-wrap { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
 
-  /* Header row */
   #thead {
     background: var(--bg-card);
     border-bottom: 1px solid var(--gold-dim);
@@ -244,43 +228,27 @@
     flex-shrink: 0;
   }
   .th {
-    padding: 6px 8px;
-    font-size: 9px;
-    font-weight: bold;
-    color: var(--gold);
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    padding: 6px 8px; font-size: 9px; font-weight: bold;
+    color: var(--gold); letter-spacing: 0.06em;
+    cursor: pointer; user-select: none;
+    display: flex; align-items: center; gap: 4px;
   }
   .th:hover { color: var(--gold-light); }
   .th.sort-active { color: var(--gold-light); }
-  .th-rank  { justify-content: flex-end; padding-right: 12px; }
-  .th-pts   { justify-content: flex-end; padding-right: 12px; }
+  .th-rank { justify-content: flex-end; padding-right: 12px; }
+  .th-pts  { justify-content: flex-end; padding-right: 12px; }
   .sort-arrow { font-size: 8px; }
 
-  /* Scrollable body */
-  #tbody-scroll {
-    overflow-y: auto;
-    flex: 1;
-  }
+  #tbody-scroll { overflow-y: auto; flex: 1; }
   #tbody-scroll::-webkit-scrollbar { width: 10px; }
   #tbody-scroll::-webkit-scrollbar-track { background: var(--bg-panel); }
   #tbody-scroll::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
   #tbody-scroll::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
-  #tbody {
-    width: 100%;
-  }
-
-  /* Data row */
   .row {
     display: grid;
     grid-template-columns: 70px 220px 110px 1fr;
-    height: 32px;
-    align-items: center;
+    height: 32px; align-items: center;
     border-bottom: 1px solid rgba(51,48,37,0.4);
     transition: background 0.08s;
   }
@@ -289,80 +257,39 @@
   .row:hover           { background: var(--bg-hover); }
 
   .td { padding: 0 8px; overflow: hidden; white-space: nowrap; }
-  .td-rank {
-    text-align: right;
-    padding-right: 12px;
-    font-size: 11px;
-    font-weight: bold;
-  }
+  .td-rank { text-align: right; padding-right: 12px; font-size: 11px; font-weight: bold; }
   .td-rank.r1 { color: #c8a84b; }
   .td-rank.r2 { color: #c0c0c0; }
   .td-rank.r3 { color: #cd7f32; }
   .td-rank.rn { color: var(--text-dim); }
-
   .td-name { font-size: 11px; color: var(--text-white); }
-  .td-name a {
-    color: inherit;
-    text-decoration: none;
-  }
+  .td-name a { color: inherit; text-decoration: none; }
   .td-name a:hover { color: var(--gold-light); text-decoration: underline; }
-
-  .td-pts  { text-align: right; padding-right: 12px; color: var(--gold-light); font-size: 11px; }
-
+  .td-pts { text-align: right; padding-right: 12px; color: var(--gold-light); font-size: 11px; }
   .td-regions { display: flex; flex-wrap: nowrap; gap: 4px; align-items: center; overflow: hidden; padding: 0 6px; }
 
-  /* Region chips */
   .chip {
-    display: inline-block;
-    padding: 1px 6px;
-    border-radius: 2px;
-    font-size: 9px;
-    font-weight: bold;
+    display: inline-block; padding: 1px 6px; border-radius: 2px;
+    font-size: 9px; font-weight: bold;
     font-family: 'Share Tech Mono', monospace;
-    color: #0d0d0d;
-    white-space: nowrap;
-    flex-shrink: 0;
+    white-space: nowrap; flex-shrink: 0;
   }
-  .chip-Varlamore          { background: var(--region-varlamore); color: #e8d0ff; }
-  .chip-Karamja            { background: var(--region-karamja); }
-  .chip-Asgarnia           { background: var(--region-asgarnia); color: #c8ddff; }
-  .chip-Desert             { background: var(--region-desert); }
-  .chip-Fremennik\.Province{ background: var(--region-fremennik); color: #c8eeff; }
-  .chip-Kandarin           { background: var(--region-kandarin); }
-  .chip-Kebos\.and\.Kourend{ background: var(--region-kourend); color: #e8c8e8; }
-  .chip-Morytania          { background: var(--region-morytania); color: #ffbbbb; }
-  .chip-Tirannwn           { background: var(--region-tirannwn); color: #b8ffe0; }
-  .chip-Wilderness         { background: var(--region-wilderness); color: #ffd8b8; }
-
   .unknown-txt { color: var(--text-muted); font-size: 10px; }
 
-  /* Empty state */
   #empty-state {
-    display: none;
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text-muted);
-    font-size: 13px;
+    display: none; text-align: center;
+    padding: 60px 20px; color: var(--text-muted); font-size: 13px;
   }
 
   /* Loading overlay */
   #loading {
-    position: fixed;
-    inset: 0;
-    background: var(--bg-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    z-index: 100;
+    position: fixed; inset: 0; background: var(--bg-dark);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 16px; z-index: 100;
   }
-  #loading h2 {
-    font-family: 'IM Fell English', serif;
-    font-size: 22px;
-    color: var(--gold);
-  }
-  #loading p { color: var(--text-dim); font-size: 11px; }
+  #loading h2 { font-family: 'IM Fell English', serif; font-size: 22px; color: var(--gold); }
+  #loading p  { color: var(--text-dim); font-size: 11px; }
   .spinner {
     width: 40px; height: 40px;
     border: 3px solid var(--gold-faint);
@@ -372,17 +299,11 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* Error */
   #error-msg {
     display: none;
-    background: #2a0808;
-    border: 1px solid var(--red);
-    border-radius: 4px;
-    padding: 12px 16px;
-    margin: 20px;
-    color: #ffaaaa;
-    font-size: 11px;
-    line-height: 1.7;
+    background: #2a0808; border: 1px solid var(--red);
+    border-radius: 4px; padding: 12px 16px; margin: 20px;
+    color: #ffaaaa; font-size: 11px; line-height: 1.7;
   }
 
   /* Status bar */
@@ -390,22 +311,14 @@
     background: var(--bg-panel);
     border-top: 1px solid var(--border);
     padding: 5px 14px;
-    font-size: 10px;
-    color: var(--text-dim);
+    font-size: 10px; color: var(--text-dim);
     flex-shrink: 0;
+    display: flex; align-items: center; justify-content: space-between;
   }
-
-  /* Export button in status bar */
   #export-btn {
-    float: right;
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    color: var(--text-dim);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
-    padding: 2px 8px;
-    cursor: pointer;
+    background: none; border: 1px solid var(--border); border-radius: 3px;
+    color: var(--text-dim); font-family: 'Share Tech Mono', monospace;
+    font-size: 10px; padding: 2px 8px; cursor: pointer;
     transition: color 0.15s, border-color 0.15s;
   }
   #export-btn:hover { color: var(--text-white); border-color: var(--gold-dim); }
@@ -421,7 +334,6 @@
 
 <div id="app" style="display:none;">
 
-  <!-- Header -->
   <div id="header">
     <span class="skull">☠</span>
     <div id="header-text">
@@ -433,11 +345,25 @@
     </div>
   </div>
 
-  <!-- Body -->
   <div id="body">
 
     <!-- Sidebar -->
     <div id="sidebar">
+
+      <div class="sb-section">LEADERBOARD</div>
+
+      <div class="pages-row">
+        <span>Pages:</span>
+        <input type="number" id="pages-input" value="4" min="1" max="800">
+        <span style="color:var(--text-muted)">×25</span>
+      </div>
+
+      <button class="fetch-btn" id="btn-fetch-lb">⚔ FETCH LEADERBOARD</button>
+      <button class="fetch-btn" id="btn-fetch-reg">🗺 FETCH REGIONS</button>
+
+      <div id="progress-wrap"><div id="progress-bar"></div></div>
+
+      <div class="sb-divider"></div>
       <div class="sb-section">FILTER BY REGION</div>
 
       <div class="match-mode">
@@ -456,7 +382,6 @@
     <div id="content">
       <div class="gold-bar"></div>
 
-      <!-- Search + stats bar -->
       <div id="top-bar">
         <span class="icon">🔍</span>
         <input type="text" id="search-input" placeholder="Search player name…" autocomplete="off">
@@ -464,13 +389,12 @@
         <span id="region-label"></span>
       </div>
 
-      <!-- Table -->
       <div id="table-wrap">
         <div id="thead">
-          <div class="th th-rank"  data-col="rank">RANK <span class="sort-arrow">▼</span></div>
-          <div class="th"          data-col="name">PLAYER NAME <span class="sort-arrow"></span></div>
-          <div class="th th-pts"   data-col="points">LEAGUE PTS <span class="sort-arrow"></span></div>
-          <div class="th"          data-col="regions">REGIONS <span class="sort-arrow"></span></div>
+          <div class="th th-rank" data-col="rank">RANK <span class="sort-arrow">▼</span></div>
+          <div class="th"         data-col="name">PLAYER NAME <span class="sort-arrow"></span></div>
+          <div class="th th-pts"  data-col="points">LEAGUE PTS <span class="sort-arrow"></span></div>
+          <div class="th"         data-col="regions">REGIONS <span class="sort-arrow"></span></div>
         </div>
 
         <div id="error-msg"></div>
@@ -481,10 +405,9 @@
         </div>
       </div>
 
-      <!-- Status bar -->
       <div id="status-bar">
-        <button id="export-btn">↓ Export CSV</button>
         <span id="status-text">Loading…</span>
+        <button id="export-btn">↓ Export CSV</button>
       </div>
     </div>
   </div>
@@ -492,161 +415,297 @@
 
 <script>
 // ─────────────────────────────────────────────────────────────────────────────
-//  State
+//  CONFIG — paste your Cloudflare Worker URL here
 // ─────────────────────────────────────────────────────────────────────────────
+const PROXY = "https://osrs-proxy.bauwsloa.workers.dev/";
 
-let allPlayers  = [];
-let filtered    = [];
-let sortCol     = 'rank';
-let sortRev     = false;
-let debounceT   = null;
-let generatedAt = '';
+// ─────────────────────────────────────────────────────────────────────────────
+//  Constants
+// ─────────────────────────────────────────────────────────────────────────────
+const BASE            = "https://secure.runescape.com";
+const LEADERBOARD_URL = `${BASE}/m=hiscore_oldschool_seasonal/overall.ws`;
+const LEADERBOARD_PRM = { category_type: 1, table: 1 };
+const TEMPLE_API      = "https://templeosrs.com/api/leagues/vi/tracking.php";
 
-const REGION_COLORS = {
-  'Varlamore':           '#7b3f9e',
-  'Karamja':             '#2d7a3a',
-  'Asgarnia':            '#1a5fa8',
-  'Desert':              '#a86e1a',
-  'Fremennik Province':  '#2a6b7c',
-  'Kandarin':            '#4a7a2a',
-  'Kebos and Kourend':   '#6b2a6b',
-  'Morytania':           '#5a2020',
-  'Tirannwn':            '#1e6b4a',
-  'Wilderness':          '#6b3a1a',
+const AREA_MAP = {
+  asgarnia:   "Asgarnia",
+  desert:     "Desert",
+  fremennik:  "Fremennik Province",
+  kandarin:   "Kandarin",
+  kourend:    "Kebos and Kourend",
+  morytania:  "Morytania",
+  tirannwn:   "Tirannwn",
+  wilderness: "Wilderness",
 };
-
-const ALWAYS_UNLOCKED = ['Varlamore', 'Karamja'];
+const ALWAYS_UNLOCKED = ["Varlamore", "Karamja"];
 const ALL_REGIONS = [
-  'Varlamore','Karamja','Asgarnia','Desert',
-  'Fremennik Province','Kandarin','Kebos and Kourend',
-  'Morytania','Tirannwn','Wilderness'
+  "Varlamore","Karamja","Asgarnia","Desert",
+  "Fremennik Province","Kandarin","Kebos and Kourend",
+  "Morytania","Tirannwn","Wilderness"
 ];
 
-// Text colour for chips (light on dark bg, dark on light bg)
-const CHIP_TEXT = {
-  'Varlamore':          '#e8d0ff',
-  'Karamja':            '#0d0d0d',
-  'Asgarnia':           '#c8ddff',
-  'Desert':             '#0d0d0d',
-  'Fremennik Province': '#c8eeff',
-  'Kandarin':           '#0d0d0d',
-  'Kebos and Kourend':  '#e8c8e8',
-  'Morytania':          '#ffbbbb',
-  'Tirannwn':           '#b8ffe0',
-  'Wilderness':         '#ffd8b8',
+const REGION_COLORS = {
+  "Varlamore":          { bg:"#7b3f9e", fg:"#e8d0ff" },
+  "Karamja":            { bg:"#2d7a3a", fg:"#0d0d0d" },
+  "Asgarnia":           { bg:"#1a5fa8", fg:"#c8ddff" },
+  "Desert":             { bg:"#a86e1a", fg:"#0d0d0d" },
+  "Fremennik Province": { bg:"#2a6b7c", fg:"#c8eeff" },
+  "Kandarin":           { bg:"#4a7a2a", fg:"#0d0d0d" },
+  "Kebos and Kourend":  { bg:"#6b2a6b", fg:"#e8c8e8" },
+  "Morytania":          { bg:"#5a2020", fg:"#ffbbbb" },
+  "Tirannwn":           { bg:"#1e6b4a", fg:"#b8ffe0" },
+  "Wilderness":         { bg:"#6b3a1a", fg:"#ffd8b8" },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Build sidebar region checkboxes
+//  State
 // ─────────────────────────────────────────────────────────────────────────────
+let allPlayers  = [];
+let filtered    = [];
+let sortCol     = "rank";
+let sortRev     = false;
+let debounceT   = null;
+let fetching    = false;
 
-function buildRegionList() {
-  const list = document.getElementById('region-list');
-  ALL_REGIONS.forEach(region => {
-    const label = document.createElement('label');
-    label.className = 'region-cb';
-    const cb = document.createElement('input');
-    cb.type = 'checkbox';
-    cb.value = region;
-    cb.addEventListener('change', applyFilter);
-    const star = ALWAYS_UNLOCKED.includes(region) ? ' <span class="star">★</span>' : '';
-    label.appendChild(cb);
-    label.innerHTML += region + star;
-    list.appendChild(label);
-  });
+// localStorage cache key
+const LS_KEY = "demonic_pacts_players";
+
+function loadLocalCache() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch { return {}; }
+}
+function saveLocalCache(pc) {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(pc)); } catch {}
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Render table
+//  Proxy helpers
 // ─────────────────────────────────────────────────────────────────────────────
-
-function rankClass(rank) {
-  if (rank === 1) return 'r1';
-  if (rank === 2) return 'r2';
-  if (rank === 3) return 'r3';
-  return 'rn';
+function proxyUrl(target) {
+  return `${PROXY}?url=${encodeURIComponent(target)}`;
 }
 
+async function proxyGet(url) {
+  const r = await fetch(proxyUrl(url));
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Parse leaderboard HTML
+// ─────────────────────────────────────────────────────────────────────────────
+const ROW_RE = /<td[^>]*>\s*(\d[\d,]*)\s*<\/td>\s*<td[^>]*>.*?<a[^>]*>([^<]+)<\/a>.*?<\/td>\s*<td[^>]*>\s*([\d,]+)\s*<\/td>/gsi;
+
+function parseLeaderboard(html) {
+  const players = [];
+  ROW_RE.lastIndex = 0;
+  let m;
+  while ((m = ROW_RE.exec(html)) !== null) {
+    try {
+      players.push({
+        rank:    parseInt(m[1].replace(/,/g, "")),
+        name:    m[2].trim(),
+        points:  parseInt(m[3].replace(/,/g, "")),
+        regions: [],
+      });
+    } catch {}
+  }
+  return players;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Parse TempleOSRS regions
+// ─────────────────────────────────────────────────────────────────────────────
+function parseAreas(data) {
+  const regions = [...ALWAYS_UNLOCKED];
+  const areas = data?.info?.areas || {};
+  for (const [key, val] of Object.entries(areas)) {
+    if (val === 1 && AREA_MAP[key]) regions.push(AREA_MAP[key]);
+  }
+  return regions;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Fetch leaderboard
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchLeaderboard() {
+  if (fetching) return;
+  fetching = true;
+
+  const pages = Math.max(1, Math.min(parseInt(document.getElementById("pages-input").value) || 4, 800));
+  const pc    = loadLocalCache();
+
+  setStatus("Fetching leaderboard…", "gold");
+  setBtnsDisabled(true);
+  setProgress(0);
+
+  const newPlayers = [];
+
+  for (let page = 1; page <= pages; page++) {
+    setStatus(`Fetching page ${page}/${pages}…`, "gold");
+    setProgress(page / pages);
+
+    const params = new URLSearchParams({ ...LEADERBOARD_PRM, page });
+    const url    = `${LEADERBOARD_URL}?${params}`;
+
+    try {
+      const r    = await proxyGet(url);
+      const html = await r.text();
+      const rows = parseLeaderboard(html);
+      if (rows.length === 0 && page > 1) break;
+      for (const p of rows) {
+        p.regions = pc[p.name] || [];
+        newPlayers.push(p);
+      }
+    } catch (e) {
+      setStatus(`Error on page ${page}: ${e.message}`, "red");
+      break;
+    }
+
+    if (page < pages) await sleep(300);
+  }
+
+  allPlayers = newPlayers;
+  filtered   = [...allPlayers];
+  renderTable();
+  updateStats();
+  setStatus(`Loaded ${allPlayers.length.toLocaleString()} players.`, "green");
+  setProgress(1);
+  setBtnsDisabled(false);
+  fetching = false;
+
+  // Update snapshot time
+  document.getElementById("generated-time").innerHTML =
+    `Live fetch<br>${new Date().toLocaleTimeString()}`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Fetch regions (concurrent)
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchRegions() {
+  if (fetching) return;
+  if (allPlayers.length === 0) {
+    setStatus("Fetch the leaderboard first.", "red");
+    return;
+  }
+
+  fetching = true;
+  setBtnsDisabled(true);
+
+  const needs = allPlayers.filter(p => !p.regions || p.regions.length === 0);
+  const total = needs.length;
+
+  if (total === 0) {
+    setStatus("All regions already fetched.", "green");
+    setBtnsDisabled(false);
+    fetching = false;
+    return;
+  }
+
+  const pc      = loadLocalCache();
+  let done      = 0;
+  let ok        = 0;
+  const BATCH   = 10; // concurrent requests
+
+  setStatus(`Fetching regions for ${total.toLocaleString()} players…`, "gold");
+  setProgress(0);
+
+  for (let i = 0; i < needs.length; i += BATCH) {
+    const batch = needs.slice(i, i + BATCH);
+
+    await Promise.all(batch.map(async (player) => {
+      const url = `${TEMPLE_API}?player=${encodeURIComponent(player.name)}`;
+      try {
+        const r    = await proxyGet(url);
+        const data = await r.json();
+        if (!data.error && data.info) {
+          player.regions = parseAreas(data);
+          pc[player.name] = player.regions;
+          ok++;
+        } else {
+          player.regions = [];
+        }
+      } catch {
+        // leave regions empty
+      }
+      done++;
+    }));
+
+    saveLocalCache(pc);
+    setProgress(done / total);
+    setStatus(`Regions [${done}/${total}]  ${ok} found  •  ${done - ok} untracked/errors`, "gold");
+    applyFilter(); // refresh table live
+    await sleep(50); // small yield so UI stays responsive
+  }
+
+  saveLocalCache(pc);
+  applyFilter();
+  setStatus(`Done — ${ok.toLocaleString()} regions found out of ${total.toLocaleString()} players.`, "green");
+  setProgress(1);
+  setBtnsDisabled(false);
+  fetching = false;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Render
+// ─────────────────────────────────────────────────────────────────────────────
 function chipHTML(region) {
-  const bg  = REGION_COLORS[region] || '#555';
-  const col = CHIP_TEXT[region]     || '#0d0d0d';
-  return `<span class="chip" style="background:${bg};color:${col}">${escH(region)}</span>`;
+  const c = REGION_COLORS[region] || { bg:"#555", fg:"#fff" };
+  return `<span class="chip" style="background:${c.bg};color:${c.fg}">${escH(region)}</span>`;
 }
-
 function escH(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+function rankClass(r) {
+  return r===1?"r1":r===2?"r2":r===3?"r3":"rn";
 }
 
 function renderTable() {
-  const tbody = document.getElementById('tbody');
-  const empty = document.getElementById('empty-state');
-
+  const tbody = document.getElementById("tbody");
+  const empty = document.getElementById("empty-state");
   if (filtered.length === 0) {
-    tbody.innerHTML = '';
-    empty.style.display = 'block';
+    tbody.innerHTML = "";
+    empty.style.display = "block";
     return;
   }
-  empty.style.display = 'none';
-
+  empty.style.display = "none";
   const frag = document.createDocumentFragment();
   for (const p of filtered) {
-    const row = document.createElement('div');
-    row.className = 'row';
-
+    const row = document.createElement("div");
+    row.className = "row";
     const regions = p.regions || [];
-    const regionsHTML = regions.length
-      ? regions.map(chipHTML).join('')
+    const regHTML = regions.length
+      ? regions.map(chipHTML).join("")
       : '<span class="unknown-txt">Unknown</span>';
-
     const osrsUrl = `https://secure.runescape.com/m=hiscore_oldschool_seasonal/hiscorepersonal.ws?user1=${encodeURIComponent(p.name)}`;
-
     row.innerHTML =
       `<div class="td td-rank ${rankClass(p.rank)}">${p.rank.toLocaleString()}</div>` +
       `<div class="td td-name"><a href="${osrsUrl}" target="_blank" rel="noopener">${escH(p.name)}</a></div>` +
       `<div class="td td-pts">${p.points.toLocaleString()}</div>` +
-      `<div class="td td-regions">${regionsHTML}</div>`;
-
+      `<div class="td td-regions">${regHTML}</div>`;
     frag.appendChild(row);
   }
-
-  tbody.innerHTML = '';
+  tbody.innerHTML = "";
   tbody.appendChild(frag);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Filter + sort
 // ─────────────────────────────────────────────────────────────────────────────
-
-function getCheckedRegions() {
-  return Array.from(document.querySelectorAll('#region-list input:checked')).map(cb => cb.value);
-}
-
-function getMatchMode() {
-  return document.querySelector('input[name="matchmode"]:checked').value;
-}
-
 function applyFilter() {
-  const query    = document.getElementById('search-input').value.toLowerCase().trim();
-  const selected = getCheckedRegions();
-  const mode     = getMatchMode();
-  const selSet   = new Set(selected.map(r => r.toLowerCase()));
+  const query   = document.getElementById("search-input").value.toLowerCase().trim();
+  const selSet  = new Set(
+    Array.from(document.querySelectorAll("#region-list input:checked")).map(cb => cb.value.toLowerCase())
+  );
+  const mode    = document.querySelector("input[name=matchmode]:checked").value;
 
   let result = allPlayers;
-
-  if (query) {
-    result = result.filter(p => p.name.toLowerCase().includes(query));
-  }
-
-  if (selSet.size > 0) {
+  if (query)       result = result.filter(p => p.name.toLowerCase().includes(query));
+  if (selSet.size) {
     result = result.filter(p => {
-      const pr = new Set((p.regions || []).map(r => r.toLowerCase()));
-      if (mode === 'all') {
-        for (const r of selSet) if (!pr.has(r)) return false;
-        return true;
-      } else {
-        for (const r of selSet) if (pr.has(r)) return true;
-        return false;
-      }
+      const pr = new Set((p.regions||[]).map(r=>r.toLowerCase()));
+      return mode === "all"
+        ? [...selSet].every(r => pr.has(r))
+        : [...selSet].some(r  => pr.has(r));
     });
   }
 
@@ -655,49 +714,30 @@ function applyFilter() {
   updateStats();
 }
 
-function onSearchChange() {
-  clearTimeout(debounceT);
-  debounceT = setTimeout(applyFilter, 180);
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-//  Sort
-// ─────────────────────────────────────────────────────────────────────────────
-
 function sortPlayers(col) {
-  if (sortCol === col) {
-    sortRev = !sortRev;
-  } else {
-    sortCol = col;
-    sortRev = col === 'points'; // default desc for points
-  }
+  sortRev = sortCol === col ? !sortRev : col === "points";
+  sortCol = col;
 
-  allPlayers.sort((a, b) => {
-    let va, vb;
-    if (col === 'regions') {
-      va = (a.regions || []).length;
-      vb = (b.regions || []).length;
-    } else if (col === 'name') {
-      va = a.name.toLowerCase();
-      vb = b.name.toLowerCase();
-    } else {
-      va = a[col] || 0;
-      vb = b[col] || 0;
-    }
-    if (va < vb) return sortRev ? 1 : -1;
-    if (va > vb) return sortRev ? -1 : 1;
+  allPlayers.sort((a,b) => {
+    let va = col==="regions" ? (a.regions||[]).length
+           : col==="name"    ? a.name.toLowerCase()
+           : a[col]||0;
+    let vb = col==="regions" ? (b.regions||[]).length
+           : col==="name"    ? b.name.toLowerCase()
+           : b[col]||0;
+    if (va<vb) return sortRev?1:-1;
+    if (va>vb) return sortRev?-1:1;
     return 0;
   });
 
-  // Update header arrows
-  document.querySelectorAll('.th').forEach(th => {
-    const arrow = th.querySelector('.sort-arrow');
+  document.querySelectorAll(".th").forEach(th => {
+    const arrow = th.querySelector(".sort-arrow");
     if (th.dataset.col === col) {
-      th.classList.add('sort-active');
-      arrow.textContent = sortRev ? '▲' : '▼';
+      th.classList.add("sort-active");
+      arrow.textContent = sortRev ? "▲" : "▼";
     } else {
-      th.classList.remove('sort-active');
-      arrow.textContent = '';
+      th.classList.remove("sort-active");
+      arrow.textContent = "";
     }
   });
 
@@ -705,94 +745,119 @@ function sortPlayers(col) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Stats
+//  Stats + UI helpers
 // ─────────────────────────────────────────────────────────────────────────────
-
 function updateStats() {
   const total = allPlayers.length;
-  const known = allPlayers.filter(p => p.regions && p.regions.length > 0).length;
-  const shown = filtered.length;
-  document.getElementById('count-label').textContent = `Showing ${shown.toLocaleString()} / ${total.toLocaleString()}`;
-  document.getElementById('region-label').textContent = `│  Regions: ${known.toLocaleString()}/${total.toLocaleString()}`;
+  const known = allPlayers.filter(p=>p.regions&&p.regions.length>0).length;
+  document.getElementById("count-label").textContent  = `Showing ${filtered.length.toLocaleString()} / ${total.toLocaleString()}`;
+  document.getElementById("region-label").textContent = `│  Regions: ${known.toLocaleString()}/${total.toLocaleString()}`;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-//  Export CSV
-// ─────────────────────────────────────────────────────────────────────────────
+function setStatus(msg, color="dim") {
+  const el = document.getElementById("status-text");
+  el.style.color = {gold:"#c8a84b",green:"#3a8a3a",red:"#c0392b",dim:"#888070"}[color]||"#888070";
+  el.textContent = msg;
+}
+
+function setProgress(frac) {
+  document.getElementById("progress-bar").style.width = `${Math.round(frac*100)}%`;
+}
+
+function setBtnsDisabled(dis) {
+  document.getElementById("btn-fetch-lb").disabled  = dis;
+  document.getElementById("btn-fetch-reg").disabled = dis;
+  document.getElementById("btn-fetch-lb").textContent  = dis ? "⏳ FETCHING…"       : "⚔ FETCH LEADERBOARD";
+  document.getElementById("btn-fetch-reg").textContent = dis ? "⏳ FETCHING…"       : "🗺 FETCH REGIONS";
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 function exportCSV() {
-  const rows = ['Rank,Name,LeaguePoints,Regions'];
+  const rows = ["Rank,Name,LeaguePoints,Regions"];
   for (const p of filtered) {
-    const rstr = (p.regions || []).join('|') || 'Unknown';
+    const rstr = (p.regions||[]).join("|") || "Unknown";
     rows.push(`${p.rank},"${p.name}",${p.points},"${rstr}"`);
   }
-  const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
-  const a    = document.createElement('a');
-  a.href     = URL.createObjectURL(blob);
-  a.download = 'league_export.csv';
+  const a    = document.createElement("a");
+  a.href     = URL.createObjectURL(new Blob([rows.join("\n")],{type:"text/csv"}));
+  a.download = "league_export.csv";
   a.click();
   URL.revokeObjectURL(a.href);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+//  Build region sidebar
+// ─────────────────────────────────────────────────────────────────────────────
+function buildRegionList() {
+  const list = document.getElementById("region-list");
+  ALL_REGIONS.forEach(region => {
+    const label = document.createElement("label");
+    label.className = "region-cb";
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.value = region;
+    cb.addEventListener("change", applyFilter);
+    label.appendChild(cb);
+    const star = ALWAYS_UNLOCKED.includes(region) ? ' <span class="star">★</span>' : "";
+    label.innerHTML += region + star;
+    list.appendChild(label);
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 //  Init
 // ─────────────────────────────────────────────────────────────────────────────
-
 async function init() {
   buildRegionList();
 
-  // Wire up controls
-  document.getElementById('search-input').addEventListener('input', onSearchChange);
-  document.getElementById('clear-btn').addEventListener('click', () => {
-    document.querySelectorAll('#region-list input').forEach(cb => cb.checked = false);
-    document.getElementById('search-input').value = '';
+  document.getElementById("search-input").addEventListener("input", () => {
+    clearTimeout(debounceT);
+    debounceT = setTimeout(applyFilter, 180);
+  });
+  document.getElementById("clear-btn").addEventListener("click", () => {
+    document.querySelectorAll("#region-list input").forEach(cb => cb.checked=false);
+    document.getElementById("search-input").value = "";
     applyFilter();
   });
-  document.getElementById('export-btn').addEventListener('click', exportCSV);
-  document.getElementById('sidebar-export-btn').addEventListener('click', exportCSV);
-  document.querySelectorAll('.th').forEach(th => {
-    th.addEventListener('click', () => sortPlayers(th.dataset.col));
-  });
-  document.querySelectorAll('input[name="matchmode"]').forEach(r => {
-    r.addEventListener('change', applyFilter);
-  });
+  document.getElementById("btn-fetch-lb").addEventListener("click",  fetchLeaderboard);
+  document.getElementById("btn-fetch-reg").addEventListener("click", fetchRegions);
+  document.getElementById("export-btn").addEventListener("click",        exportCSV);
+  document.getElementById("sidebar-export-btn").addEventListener("click",exportCSV);
+  document.querySelectorAll(".th").forEach(th =>
+    th.addEventListener("click", () => sortPlayers(th.dataset.col))
+  );
+  document.querySelectorAll("input[name=matchmode]").forEach(r =>
+    r.addEventListener("change", applyFilter)
+  );
 
-  // Load data
+  // Try loading leaderboard_data.json first (from GitHub Action)
   try {
-    const resp = await fetch('leaderboard_data.json');
-    if (!resp.ok) throw new Error(`HTTP ${resp.status} — could not load leaderboard_data.json`);
+    const resp = await fetch("leaderboard_data.json");
+    if (!resp.ok) throw new Error("no json");
     const data = await resp.json();
+    const pc   = loadLocalCache();
 
-    allPlayers = data.players || [];
-    filtered   = [...allPlayers];
-    generatedAt = data.generated || '';
+    allPlayers = (data.players || []).map(p => ({
+      ...p,
+      regions: pc[p.name] || p.regions || [],
+    }));
+    filtered = [...allPlayers];
 
-    if (generatedAt) {
-      const d = new Date(generatedAt);
-      document.getElementById('generated-time').innerHTML =
-        `Data snapshot<br>${d.toLocaleDateString()} ${d.toLocaleTimeString()}`;
+    if (data.generated) {
+      const d = new Date(data.generated);
+      document.getElementById("generated-time").innerHTML =
+        `Last auto-update<br>${d.toLocaleDateString()} ${d.toLocaleTimeString()}`;
     }
 
     renderTable();
     updateStats();
-    document.getElementById('status-text').textContent =
-      `${allPlayers.length.toLocaleString()} players loaded.`;
-
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('app').style.display     = 'flex';
-
-  } catch (err) {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('app').style.display     = 'flex';
-    const errEl = document.getElementById('error-msg');
-    errEl.style.display = 'block';
-    errEl.innerHTML =
-      `<strong>⚠ Could not load leaderboard_data.json</strong><br><br>` +
-      `${err.message}<br><br>` +
-      `Make sure you have run <code>python export_leaderboard.py</code> and committed ` +
-      `<code>leaderboard_data.json</code> to the same folder as this <code>index.html</code>.`;
-    document.getElementById('status-text').textContent = 'Error loading data.';
+    setStatus(`${allPlayers.length.toLocaleString()} players loaded from snapshot. Hit Fetch to refresh.`, "gold");
+  } catch {
+    setStatus("No snapshot found — hit ⚔ FETCH LEADERBOARD to load data.", "dim");
   }
+
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("app").style.display     = "flex";
 }
 
 init();
