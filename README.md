@@ -44,7 +44,7 @@ Auto updates the rankings **every hour** or on-demand with manual **Fetch** butt
 
 </div>
 
-  <sub> **~** Auto updater is set to run **hourly** via GitHub **~** </sub>
+> ⏱ Auto updater is set to run **hourly** via GitHub
 
 ---
 
