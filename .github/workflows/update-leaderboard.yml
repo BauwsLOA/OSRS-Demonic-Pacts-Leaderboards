@@ -7,7 +7,7 @@ on:
     # "0 */2 * * *"  = every 2 hours
     # "0 * * * *"    = every hour
     # "*/30 * * * *" = every 30 minutes
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
 
   # Also allows you to trigger it manually from the Actions tab
   workflow_dispatch:
