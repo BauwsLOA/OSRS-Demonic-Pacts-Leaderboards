@@ -1,7 +1,7 @@
 <div align="center">
 
 <div align="center">
-<img src="https://oldschool.runescape.wiki/images/Demonic_Pacts_League_logo.png?4aaa2" alt="Demonic Pacts Logo" width="240"/>
+<img src="https://oldschool.runescape.wiki/images/Demonic_Pacts_League_logo.png?4aaa2" alt="Demonic Pacts Logo" width="340"/>
 
 
 
@@ -32,13 +32,19 @@ A live leaderboard tracker for OSRS Leagues VI. Pulls rank, league points, and u
 
 ## How it works
 
-Auto updates the ranking every hour or on demand with manual 'Fetch' buttons
-1. Press 'Fetch Leaderboards'
-2. Press 'Fetch Regions'
-3. Maximum fetchable highscore pages is set to 25 (each page has 25 players for a total of top 625), if the character you want to lookup is not showing up then type the RSN in the search bar and hit 'Lookup', it will then specifically fetch that player's data
+Auto updates the rankings **every hour** or on-demand with manual **Fetch** buttons
 
+<sup> Auto update data requires a refresh to import the new rankings </sup>
 
-   ~ Auto updater is set to run hourly via GitHub ~
+<div align="left">
+
+1. Press **Fetch Leaderboards**
+2. Press **Fetch Regions**
+3. Maximum fetchable highscore pages is set to 25 (each page has 25 players for a total of top 625), if the character you want to lookup is not within that range then type the RSN in the search bar and hit **Lookup**, it will then specifically fetch that player's data and present it at the top of the list.
+
+</div>
+
+  <sub> **~** Auto updater is set to run **hourly** via GitHub **~** </sub>
 
 ---
 
