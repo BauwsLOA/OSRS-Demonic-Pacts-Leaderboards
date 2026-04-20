@@ -769,7 +769,7 @@ async function lookupPlayer() {
 
   try {
     const [hiscoreResp, templeResp] = await Promise.allSettled([
-      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name)}`),
+      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name.replace(/ /g, '_'))}`),
       proxyGet(`${TEMPLE_API}?player=${encodeURIComponent(name)}`),
     ]);
 
