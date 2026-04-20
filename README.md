@@ -32,9 +32,9 @@ A live leaderboard tracker for OSRS Leagues VI. Pulls rank, league points, and u
 
 ## How it works
 
-Auto updates the rankings **every hour** or on-demand with manual **Fetch** buttons
+Auto updates the rankings or on-demand with manual **Fetch** buttons
 
-<sup> The leaderboard updates automatically every hour — refresh the page to load the latest data </sup>
+> ⏱ The leaderboard auto updates **every hour** — refresh the page to use the latest data
 
 <div align="left">
 
@@ -43,8 +43,6 @@ Auto updates the rankings **every hour** or on-demand with manual **Fetch** butt
 3. Maximum fetchable highscore pages is set to 25 (each page has 25 players for a total of top 625), if the character you want to lookup is not within that range then type the RSN in the search bar and hit **Lookup**, it will then specifically fetch that player's data and present it at the top of the list.
 
 </div>
-
-> ⏱ Auto updater is set to run **hourly** via GitHub
 
 ---
 
