@@ -775,14 +775,36 @@ async function lookupPlayer() {
 
     let rank = null, points = null, regions = [];
 
-    // Jagex CSV: overall line is "rank,level,xp" — for leagues "level" = league pts
+    // Jagex index_lite CSV for seasonal hiscores:
+    // Lines 0-23 = skills (overall first), then activities follow.
+    // For Leagues VI, league points is the LAST line of the CSV.
+    // Each line: rank,level_or_score,xp (skills) or rank,score (activities)
     if (hiscoreResp.status === "fulfilled") {
       try {
-        const lines = (await hiscoreResp.value.text()).trim().split("\n");
+        const text  = await hiscoreResp.value.text();
+        const lines = text.trim().split("\n").map(l => l.trim()).filter(Boolean);
+
+        // Overall rank is always line 0, col 0
         if (lines.length > 0) {
-          const parts = lines[0].split(",");
-          const r = parseInt(parts[0]), p = parseInt(parts[1]);
-          if (!isNaN(r) && r > 0) rank   = r;
+          const overallParts = lines[0].split(",");
+          const r = parseInt(overallParts[0]);
+          if (!isNaN(r) && r > 0) rank = r;
+        }
+
+        // League points: last line of the CSV, format "rank,score"
+        // Also try scanning all activity lines (after the 24 skill lines) for the highest score
+        const activityLines = lines.slice(24); // skip 24 skill lines
+        let bestPts = 0;
+        for (const line of activityLines) {
+          const parts = line.split(",");
+          const score = parseInt(parts[1]);
+          if (!isNaN(score) && score > bestPts) bestPts = score;
+        }
+        if (bestPts > 0) points = bestPts;
+
+        // Fallback: if no activity lines found, try overall line col 1
+        if (!points && lines.length > 0) {
+          const p = parseInt(lines[0].split(",")[1]);
           if (!isNaN(p) && p > 0) points = p;
         }
       } catch {}
