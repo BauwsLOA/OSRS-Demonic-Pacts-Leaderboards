@@ -1,7 +1,7 @@
 <div align="center">
 
 <div align="center">
-<img src="https://oldschool.runescape.wiki/images/Demonic_Pacts_League_logo.png?4aaa2" alt="Demonic Pacts Logo" width="140"/>
+<img src="https://oldschool.runescape.wiki/images/Demonic_Pacts_League_logo.png?4aaa2" alt="Demonic Pacts Logo" width="240"/>
 
 
 
