@@ -796,7 +796,7 @@ async function lookupPlayer() {
   const exact = allPlayers.find(p => p.name.toLowerCase() === name.toLowerCase());
   if (exact) {
     if (!exact.regions || exact.regions.length === 0) {
-      setLookupBanner("found", `✔ ${exact.name} is already loaded — rank #${exact.rank ? exact.rank.toLocaleString() : "?"}. Regions unknown — please go track them on <a href="https://templeosrs.com/leagues/vi/tracking.php?player=${encodeURIComponent(exact.name)}" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">TempleOSRS</a> then refresh this page to see their regions.`);
+      setLookupBanner("found", `✔ ${exact.name} is already loaded — rank #${exact.rank ? exact.rank.toLocaleString() : "?"}. Regions unknown — please go track them on <a href="https://templeosrs.com/leagues/vi/tracking.php?player=${encodeURIComponent(exact.name)}" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">TempleOSRS</a> then refresh this page and refetch to see their regions.`);
     } else {
       setLookupBanner("found", `✔ ${exact.name} is already loaded — rank #${exact.rank ? exact.rank.toLocaleString() : "?"}.`);
     }
