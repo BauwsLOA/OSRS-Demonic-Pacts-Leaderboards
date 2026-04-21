@@ -711,7 +711,7 @@ async function fetchRegions() {
 
     saveLocalCache(pc);
     setProgress(done / total);
-    setStatus(`Regions [${done}/${total}]  ${ok} found  •  ${done - ok} untracked/errors`, "gold");
+    setStatus(`Regions [${done}/${total}]  ${ok} found  •  ${done - ok} untracked`, "gold");
     applyFilter(); // refresh table live
     await sleep(50); // small yield so UI stays responsive
   }
