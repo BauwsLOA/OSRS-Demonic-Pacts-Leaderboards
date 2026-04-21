@@ -855,6 +855,10 @@ async function lookupPlayer() {
           const pc = loadLocalCache();
           pc[name] = regions;
           saveLocalCache(pc);
+        } else {
+          // Player not tracked on TempleOSRS — silently submit a tracking request
+          // so they'll be available on the next lookup
+          proxyGet(`https://templeosrs.com/php/add_datapoint.php?player=${encodeURIComponent(name)}`).catch(() => {});
         }
       } catch {}
     }
