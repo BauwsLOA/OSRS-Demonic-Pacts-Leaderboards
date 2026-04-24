@@ -30,35 +30,16 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html, body {
-    height: 100%;
-    background: var(--bg-dark);
-    color: var(--text-white);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 13px;
-    overflow: hidden;
-  }
-
+  html, body { height: 100%; background: var(--bg-dark); color: var(--text-white);
+    font-family: 'Share Tech Mono', monospace; font-size: 13px; overflow: hidden; }
   #app { display: flex; flex-direction: column; height: 100vh; }
 
   /* ── Header ── */
-  #header {
-    background: var(--bg-panel);
-    border-bottom: 2px solid var(--gold-dim);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-  }
+  #header { background: var(--bg-panel); border-bottom: 2px solid var(--gold-dim);
+    padding: 10px 20px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
   .skull { font-size: 26px; color: var(--gold); line-height: 1; }
-  #header-text h1 {
-    font-family: 'IM Fell English', serif;
-    font-size: 19px;
-    color: var(--gold);
-    letter-spacing: 0.04em;
-  }
+  #header-text h1 { font-family: 'IM Fell English', serif; font-size: 19px;
+    color: var(--gold); letter-spacing: 0.04em; }
   #header-text p { font-size: 10px; color: var(--text-dim); margin-top: 1px; }
   #header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; }
   #generated-time { font-size: 10px; color: var(--text-muted); text-align: right; line-height: 1.5; }
@@ -67,216 +48,103 @@
   #body { display: flex; flex: 1; overflow: hidden; }
 
   /* ── Sidebar ── */
-  #sidebar {
-    width: 228px;
-    background: var(--bg-panel);
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    overflow-y: auto;
-    padding-bottom: 16px;
-  }
+  #sidebar { width: 228px; background: var(--bg-panel); border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; flex-shrink: 0; overflow-y: auto; padding-bottom: 16px; }
   #sidebar::-webkit-scrollbar { width: 6px; }
   #sidebar::-webkit-scrollbar-track { background: var(--bg-panel); }
   #sidebar::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
-
-  .sb-section {
-    font-size: 9px; font-weight: bold; color: var(--gold-dim);
-    letter-spacing: 0.08em; padding: 14px 14px 4px;
-  }
+  .sb-section { font-size: 9px; font-weight: bold; color: var(--gold-dim);
+    letter-spacing: 0.08em; padding: 14px 14px 4px; }
   .sb-divider { height: 1px; background: var(--border); margin: 8px 10px; }
-
-  /* Pages row */
-  .pages-row {
-    display: flex; align-items: center; gap: 6px;
-    padding: 0 12px 6px;
-    font-size: 10px; color: var(--text-dim);
-  }
-  .pages-row input {
-    width: 46px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    color: var(--text-white);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 11px;
-    padding: 3px 6px;
-    outline: none;
-    text-align: center;
-  }
+  .pages-row { display: flex; align-items: center; gap: 6px; padding: 0 12px 6px;
+    font-size: 10px; color: var(--text-dim); }
+  .pages-row input { width: 46px; background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 3px; color: var(--text-white); font-family: 'Share Tech Mono', monospace;
+    font-size: 11px; padding: 3px 6px; outline: none; text-align: center; }
   .pages-row input:focus { border-color: var(--gold-dim); }
-
-  /* Fetch buttons */
-  .fetch-btn {
-    display: block;
-    width: calc(100% - 24px);
-    margin: 0 12px 4px;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 4px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 11px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    transition: filter 0.15s, opacity 0.15s;
-  }
+  .fetch-btn { display: block; width: calc(100% - 24px); margin: 0 12px 4px; padding: 8px 10px;
+    border: none; border-radius: 4px; font-family: 'Share Tech Mono', monospace;
+    font-size: 11px; font-weight: bold; cursor: pointer; text-align: center;
+    transition: filter 0.15s, opacity 0.15s; }
   .fetch-btn:disabled { opacity: 0.5; cursor: not-allowed; }
   .fetch-btn:not(:disabled):hover { filter: brightness(1.2); }
   #btn-fetch-lb  { background: var(--red);   color: #ffcccc; }
   #btn-fetch-reg { background: var(--green);  color: #ccffcc; }
-
-  /* Progress bar */
-  #progress-wrap {
-    margin: 0 12px 10px;
-    height: 5px;
-    background: var(--bg-card);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  #progress-bar {
-    height: 100%;
-    width: 0%;
-    background: var(--gold);
-    border-radius: 3px;
-    transition: width 0.2s;
-  }
-
-  /* Match mode */
+  #progress-wrap { margin: 0 12px 10px; height: 5px; background: var(--bg-card);
+    border-radius: 3px; overflow: hidden; }
+  #progress-bar { height: 100%; width: 0%; background: var(--gold); border-radius: 3px; transition: width 0.2s; }
   .match-mode { display: flex; gap: 10px; padding: 0 14px 8px; }
-  .match-mode label {
-    display: flex; align-items: center; gap: 5px;
-    cursor: pointer; color: var(--text-dim); font-size: 10px;
-  }
+  .match-mode label { display: flex; align-items: center; gap: 5px;
+    cursor: pointer; color: var(--text-dim); font-size: 10px; }
   .match-mode input[type=radio] { accent-color: var(--gold); }
-
-  /* Region checkboxes */
-  #region-list {
-    padding: 4px 10px 6px;
-    display: flex; flex-direction: column; gap: 3px;
-    max-height: 280px; overflow-y: auto;
-    background: var(--bg-card);
-    margin: 0 12px 6px;
-    border-radius: 4px;
-  }
+  #region-list { padding: 4px 10px 6px; display: flex; flex-direction: column; gap: 3px;
+    max-height: 280px; overflow-y: auto; background: var(--bg-card);
+    margin: 0 12px 6px; border-radius: 4px; }
   #region-list::-webkit-scrollbar { width: 5px; }
   #region-list::-webkit-scrollbar-track { background: var(--bg-card); }
   #region-list::-webkit-scrollbar-thumb { background: var(--gold-dim); }
-
-  .region-cb {
-    display: flex; align-items: center; gap: 7px;
-    cursor: pointer; padding: 2px 0;
-    color: var(--text-white); font-size: 10px;
-  }
+  .region-cb { display: flex; align-items: center; gap: 7px; cursor: pointer;
+    padding: 2px 0; color: var(--text-white); font-size: 10px; }
   .region-cb input[type=checkbox] { accent-color: var(--gold); width: 13px; height: 13px; }
   .region-cb .star { color: var(--gold); }
-
-  /* Generic sidebar button */
-  .sb-btn {
-    display: block;
-    width: calc(100% - 24px);
-    margin: 0 12px 4px;
-    padding: 7px 10px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    color: var(--text-dim);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
-    cursor: pointer; text-align: left;
-    transition: background 0.15s, color 0.15s;
-  }
+  .sb-btn { display: block; width: calc(100% - 24px); margin: 0 12px 4px; padding: 7px 10px;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px;
+    color: var(--text-dim); font-family: 'Share Tech Mono', monospace; font-size: 10px;
+    cursor: pointer; text-align: left; transition: background 0.15s, color 0.15s; }
   .sb-btn:hover { background: var(--bg-hover); color: var(--text-white); }
 
-  /* ── Main content ── */
-  #content {
-    flex: 1; display: flex; flex-direction: column;
-    overflow: hidden; background: var(--bg-dark);
-  }
-  .gold-bar { height: 2px; background: var(--gold-dim); flex-shrink: 0; }
+  /* ── Trophy legend ── */
+  #trophy-legend { margin: 0 12px 4px; padding: 8px 10px; background: var(--bg-card);
+    border-radius: 4px; border: 1px solid var(--border); }
+  #trophy-legend .tl-title { font-size: 9px; color: var(--gold-dim); font-weight: bold;
+    letter-spacing: 0.06em; margin-bottom: 5px; }
+  .trophy-row { display: flex; align-items: center; gap: 6px; padding: 1px 0; font-size: 9px; }
+  .trophy-icon { font-size: 11px; width: 16px; text-align: center; }
+  .trophy-name { color: var(--text-dim); flex: 1; }
+  .trophy-pts  { color: var(--text-muted); }
 
-  #top-bar {
-    background: var(--bg-panel);
-    padding: 0 14px; height: 42px;
-    display: flex; align-items: center; gap: 10px;
-    flex-shrink: 0;
-  }
+  /* ── Main content ── */
+  #content { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: var(--bg-dark); }
+  .gold-bar { height: 2px; background: var(--gold-dim); flex-shrink: 0; }
+  #top-bar { background: var(--bg-panel); padding: 0 14px; height: 42px;
+    display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
   #top-bar .icon { color: var(--text-dim); font-size: 13px; }
-  #search-input {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    padding: 5px 10px;
-    color: var(--text-white);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 11px; width: 210px; outline: none;
-  }
+  #search-input { background: var(--bg-card); border: 1px solid var(--border); border-radius: 3px;
+    padding: 5px 10px; color: var(--text-white); font-family: 'Share Tech Mono', monospace;
+    font-size: 11px; width: 210px; outline: none; }
   #search-input::placeholder { color: var(--text-muted); }
   #search-input:focus { border-color: var(--gold-dim); }
-  #count-label  { color: var(--text-dim); font-size: 10px; }
-  #region-label { color: var(--text-dim); font-size: 10px; }
-
-  #search-btn {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    color: var(--gold);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background 0.15s, border-color 0.15s;
-    flex-shrink: 0;
-  }
+  #count-label, #region-label { color: var(--text-dim); font-size: 10px; }
+  #search-btn { background: var(--bg-card); border: 1px solid var(--border); border-radius: 3px;
+    color: var(--gold); font-family: 'Share Tech Mono', monospace; font-size: 10px;
+    padding: 5px 10px; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s; }
   #search-btn:hover { background: var(--bg-hover); border-color: var(--gold-dim); }
   #search-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-  /* Lookup result banner */
-  #lookup-banner {
-    display: none;
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--border);
-    padding: 6px 14px;
-    font-size: 10px;
-    color: var(--text-dim);
-    flex-shrink: 0;
-    align-items: center;
-    gap: 10px;
-  }
+  /* Lookup banner */
+  #lookup-banner { display: none; background: var(--bg-card); border-bottom: 1px solid var(--border);
+    padding: 6px 14px; font-size: 10px; color: var(--text-dim); flex-shrink: 0;
+    align-items: center; gap: 10px; }
   #lookup-banner.visible { display: flex; }
-  #lookup-banner.found   { border-left: 3px solid var(--green-light); }
-  #lookup-banner.notfound{ border-left: 3px solid var(--red-light); }
+  #lookup-banner.found    { border-left: 3px solid var(--green-light); }
+  #lookup-banner.notfound { border-left: 3px solid var(--red-light); }
   #lookup-banner.searching{ border-left: 3px solid var(--gold); }
-  #lookup-dismiss {
-    margin-left: auto;
-    background: none; border: none;
-    color: var(--text-muted); cursor: pointer; font-size: 12px;
-    padding: 0 4px;
-  }
+  #lookup-dismiss { margin-left: auto; background: none; border: none;
+    color: var(--text-muted); cursor: pointer; font-size: 12px; padding: 0 4px; }
   #lookup-dismiss:hover { color: var(--text-white); }
-
-  /* Manually looked-up row highlight */
   .row.lookup-row { background: #1a2010 !important; }
   .row.lookup-row:hover { background: #243018 !important; }
 
   /* ── Table ── */
   #table-wrap { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
-
-  #thead {
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--gold-dim);
+  #thead { background: var(--bg-card); border-bottom: 1px solid var(--gold-dim);
     display: grid;
-    grid-template-columns: 70px 220px 110px 100px 1fr;
-    flex-shrink: 0;
-  }
-  .th {
-    padding: 6px 8px; font-size: 9px; font-weight: bold;
-    color: var(--gold); letter-spacing: 0.06em;
-    cursor: pointer; user-select: none;
-    display: flex; align-items: center; gap: 4px;
-  }
+    grid-template-columns: 70px 200px 110px 150px 80px 1fr;
+    flex-shrink: 0; }
+  .th { padding: 6px 8px; font-size: 9px; font-weight: bold; color: var(--gold);
+    letter-spacing: 0.06em; cursor: pointer; user-select: none;
+    display: flex; align-items: center; gap: 4px; }
   .th:hover { color: var(--gold-light); }
   .th.sort-active { color: var(--gold-light); }
   .th-rank { justify-content: flex-end; padding-right: 12px; }
@@ -289,13 +157,10 @@
   #tbody-scroll::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
   #tbody-scroll::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
-  .row {
-    display: grid;
-    grid-template-columns: 70px 220px 110px 100px 1fr;
+  .row { display: grid;
+    grid-template-columns: 70px 200px 110px 150px 80px 1fr;
     height: 32px; align-items: center;
-    border-bottom: 1px solid rgba(51,48,37,0.4);
-    transition: background 0.08s;
-  }
+    border-bottom: 1px solid rgba(51,48,37,0.4); transition: background 0.08s; }
   .row:nth-child(even) { background: var(--bg-row-b); }
   .row:nth-child(odd)  { background: var(--bg-row-a); }
   .row:hover           { background: var(--bg-hover); }
@@ -310,80 +175,56 @@
   .td-name a { color: inherit; text-decoration: none; }
   .td-name a:hover { color: var(--gold-light); text-decoration: underline; }
   .td-pts { text-align: right; padding-right: 12px; color: var(--gold-light); font-size: 11px; }
-  .td-regions { display: flex; flex-wrap: nowrap; gap: 4px; align-items: center; overflow: hidden; padding: 0 6px; }
-
-  .chip {
-    display: inline-block; padding: 1px 6px; border-radius: 2px;
-    font-size: 9px; font-weight: bold;
-    font-family: 'Share Tech Mono', monospace;
-    white-space: nowrap; flex-shrink: 0;
-  }
+  .td-regions { display: flex; flex-wrap: nowrap; gap: 4px; align-items: center;
+    overflow: hidden; padding: 0 6px; }
+  .chip { display: inline-block; padding: 1px 6px; border-radius: 2px; font-size: 9px;
+    font-weight: bold; font-family: 'Share Tech Mono', monospace; white-space: nowrap; flex-shrink: 0; }
   .unknown-txt { color: var(--text-muted); font-size: 10px; }
 
-  .td-pct { text-align: left; padding-right: 8px; font-size: 10px; color: var(--text-dim); overflow: visible; }
-  .pct-bar-wrap {
-    width: 52px; height: 6px;
-    background: var(--bg-card);
-    border-radius: 3px;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 4px;
-  }
-  .pct-bar {
-    height: 100%;
-    border-radius: 3px;
-    background: var(--gold-dim);
-    transition: width 0.2s;
-  }
-  .pct-bar.pct-high { background: var(--gold); }
-  .th-pct { justify-content: center; }
+  /* ── Trophy column ── */
+  .td-trophy { display: flex; align-items: center; gap: 5px; padding: 0 8px; overflow: hidden; }
+  .trophy-badge { font-size: 14px; line-height: 1; flex-shrink: 0; }
+  .trophy-label { font-size: 9px; color: var(--text-dim); white-space: nowrap; overflow: hidden; }
 
-  #empty-state {
-    display: none; text-align: center;
-    padding: 60px 20px; color: var(--text-muted); font-size: 13px;
-  }
+  /* ── Progress column ── */
+  .td-progress { padding: 0 8px; display: flex; align-items: center; gap: 5px; overflow: hidden; }
+  .prog-bar-wrap { flex: 1; min-width: 0; height: 6px; background: var(--bg-card);
+    border-radius: 3px; overflow: hidden; flex-shrink: 0; width: 52px; }
+  .prog-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
+  .prog-bar.tier-dragon   { background: #c8a84b; }
+  .prog-bar.tier-rune     { background: #4a9b7f; }
+  .prog-bar.tier-adamant  { background: #4a8a4a; }
+  .prog-bar.tier-mithril  { background: #4a6b9b; }
+  .prog-bar.tier-steel    { background: #7a7a8a; }
+  .prog-bar.tier-iron     { background: #7a6050; }
+  .prog-bar.tier-bronze   { background: #9b6a3a; }
+  .prog-bar.tier-none     { background: var(--text-muted); }
+  .prog-pct { font-size: 9px; color: var(--text-dim); white-space: nowrap; min-width: 36px; text-align: right; }
 
-  /* Loading overlay */
-  #loading {
-    position: fixed; inset: 0; background: var(--bg-dark);
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 16px; z-index: 100;
-  }
+  #empty-state { display: none; text-align: center; padding: 60px 20px;
+    color: var(--text-muted); font-size: 13px; }
+
+  /* Loading */
+  #loading { position: fixed; inset: 0; background: var(--bg-dark);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; z-index: 100; }
   #loading h2 { font-family: 'IM Fell English', serif; font-size: 22px; color: var(--gold); }
   #loading p  { color: var(--text-dim); font-size: 11px; }
-  .spinner {
-    width: 40px; height: 40px;
-    border: 3px solid var(--gold-faint);
-    border-top-color: var(--gold);
-    border-radius: 50%;
-    animation: spin 0.9s linear infinite;
-  }
+  .spinner { width: 40px; height: 40px; border: 3px solid var(--gold-faint);
+    border-top-color: var(--gold); border-radius: 50%; animation: spin 0.9s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  #error-msg {
-    display: none;
-    background: #2a0808; border: 1px solid var(--red);
+  #error-msg { display: none; background: #2a0808; border: 1px solid var(--red);
     border-radius: 4px; padding: 12px 16px; margin: 20px;
-    color: #ffaaaa; font-size: 11px; line-height: 1.7;
-  }
+    color: #ffaaaa; font-size: 11px; line-height: 1.7; }
 
   /* Status bar */
-  #status-bar {
-    background: var(--bg-panel);
-    border-top: 1px solid var(--border);
-    padding: 5px 14px;
-    font-size: 10px; color: var(--text-dim);
-    flex-shrink: 0;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  #export-btn {
-    background: none; border: 1px solid var(--border); border-radius: 3px;
-    color: var(--text-dim); font-family: 'Share Tech Mono', monospace;
-    font-size: 10px; padding: 2px 8px; cursor: pointer;
-    transition: color 0.15s, border-color 0.15s;
-  }
+  #status-bar { background: var(--bg-panel); border-top: 1px solid var(--border);
+    padding: 5px 14px; font-size: 10px; color: var(--text-dim); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: space-between; }
+  #export-btn { background: none; border: 1px solid var(--border); border-radius: 3px;
+    color: var(--text-dim); font-family: 'Share Tech Mono', monospace; font-size: 10px;
+    padding: 2px 8px; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
   #export-btn:hover { color: var(--text-white); border-color: var(--gold-dim); }
 </style>
 </head>
@@ -396,7 +237,6 @@
 </div>
 
 <div id="app" style="display:none;">
-
   <div id="header">
     <span class="skull">☠</span>
     <div id="header-text">
@@ -404,7 +244,9 @@
       <p>Leagues VI &nbsp;•&nbsp; April 15 – June 10, 2026</p>
     </div>
     <div id="header-right">
-      <a href="https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);text-decoration:none;font-size:11px;" onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--text-dim)'">
+      <a href="https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);text-decoration:none;font-size:11px;"
+         onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--text-dim)'">
         <svg height="14" width="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub
       </a>
@@ -413,34 +255,41 @@
   </div>
 
   <div id="body">
-
     <!-- Sidebar -->
     <div id="sidebar">
-
       <div class="sb-section">LEADERBOARD</div>
-
       <div class="pages-row">
         <span>Pages:</span>
         <input type="number" id="pages-input" value="4" min="1" max="25">
       </div>
       <div style="padding: 0 12px 6px; font-size: 9px; color: var(--text-muted);">25 players/page • max 25 pages</div>
-
       <button class="fetch-btn" id="btn-fetch-lb">⚔ FETCH LEADERBOARD</button>
       <button class="fetch-btn" id="btn-fetch-reg">🗺 FETCH REGIONS</button>
-
       <div id="progress-wrap"><div id="progress-bar"></div></div>
 
       <div class="sb-divider"></div>
       <div class="sb-section">FILTER BY REGION</div>
-
       <div class="match-mode">
         <label><input type="radio" name="matchmode" value="any" checked> Match ANY</label>
         <label><input type="radio" name="matchmode" value="all"> Match ALL</label>
       </div>
-
       <div id="region-list"></div>
-
       <button class="sb-btn" id="clear-btn">✕&nbsp; Clear Filters</button>
+
+      <div class="sb-divider"></div>
+      <!-- Trophy thresholds legend -->
+      <div class="sb-section">TROPHY THRESHOLDS</div>
+      <div id="trophy-legend">
+        <div class="tl-title">POINTS REQUIRED</div>
+        <div class="trophy-row"><span class="trophy-icon">🏆</span><span class="trophy-name">Dragon</span><span class="trophy-pts">65,000</span></div>
+        <div class="trophy-row"><span class="trophy-icon">⚔️</span><span class="trophy-name">Rune</span><span class="trophy-pts">47,500</span></div>
+        <div class="trophy-row"><span class="trophy-icon">🛡️</span><span class="trophy-name">Adamant</span><span class="trophy-pts">32,000</span></div>
+        <div class="trophy-row"><span class="trophy-icon">💎</span><span class="trophy-name">Mithril</span><span class="trophy-pts">22,000</span></div>
+        <div class="trophy-row"><span class="trophy-icon">🔩</span><span class="trophy-name">Steel</span><span class="trophy-pts">10,000</span></div>
+        <div class="trophy-row"><span class="trophy-icon">🔨</span><span class="trophy-name">Iron</span><span class="trophy-pts">4,000</span></div>
+        <div class="trophy-row"><span class="trophy-icon">🪙</span><span class="trophy-name">Bronze</span><span class="trophy-pts">2,000</span></div>
+      </div>
+
       <div class="sb-divider"></div>
       <button class="sb-btn" id="sidebar-export-btn">↓&nbsp; Export CSV</button>
     </div>
@@ -448,7 +297,6 @@
     <!-- Content -->
     <div id="content">
       <div class="gold-bar"></div>
-
       <div id="top-bar">
         <span class="icon">🔍</span>
         <input type="text" id="search-input" placeholder="Search or Enter to lookup player…" autocomplete="off">
@@ -467,12 +315,11 @@
           <div class="th th-rank" data-col="rank">RANK <span class="sort-arrow">▼</span></div>
           <div class="th"         data-col="name">PLAYER NAME <span class="sort-arrow"></span></div>
           <div class="th th-pts"  data-col="points">LEAGUE PTS <span class="sort-arrow"></span></div>
-          <div class="th th-pct"  data-col="pct">% to MAX <span class="sort-arrow"></span></div>
           <div class="th"         data-col="regions">REGIONS <span class="sort-arrow"></span></div>
+          <div class="th"         data-col="trophy">TROPHY <span class="sort-arrow"></span></div>
+          <div class="th"         data-col="progress">WEIGHTED PROGRESS <span class="sort-arrow"></span></div>
         </div>
-
         <div id="error-msg"></div>
-
         <div id="tbody-scroll">
           <div id="tbody"></div>
           <div id="empty-state">No players match the current filter.</div>
@@ -480,9 +327,11 @@
       </div>
 
       <div id="status-bar">
-        <a href="https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);text-decoration:none;font-size:11px;" onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--text-dim)'">
-            <svg height="14" width="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-            GitHub
+        <a href="https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards" target="_blank" rel="noopener"
+           style="display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);text-decoration:none;font-size:11px;"
+           onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--text-dim)'">
+          <svg height="14" width="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
         </a>
         <span id="status-text">Loading…</span>
         <button id="export-btn">↓ Export CSV</button>
@@ -493,18 +342,88 @@
 
 <script>
 // ─────────────────────────────────────────────────────────────────────────────
-//  CONFIG — paste your Cloudflare Worker URL here
+//  CONFIG
 // ─────────────────────────────────────────────────────────────────────────────
 const PROXY = "https://osrs-proxy.bauwsloa.workers.dev";
-const MAX_PTS = 96040;
+const MAX_PTS = 96040; // confirmed: General(66040) + 3 optional regions × 10,000
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Constants
+//  TASK / TROPHY CONSTANTS
+//
+//  Confirmed point values (OSRS Wiki + community guides):
+//    Easy: 10  |  Medium: 30  |  Hard: 80  |  Elite: 200  |  Master: 400
+//
+//  From the wiki tasks table (General + all unlockable regions):
+//    Total tasks: 685  |  Total possible pts: 59,470 (general pool accessible
+//    to all) — but the actual max a player can reach depends on their regions.
+//
+//  Regional points pool (wiki table, confirmed):
+//    General:            47,240 pts  (always available)
+//    Varlamore:           2,750 pts  (always available)
+//    Karamja:             1,730 pts  (2nd unlock, always free)
+//    Each additional:    ~1,000 pts average across optional regions
+//
+//  Trophy thresholds (Jagex official):
+//    Dragon:  65,000  |  Rune:    47,500  |  Adamant: 32,000
+//    Mithril: 22,000  |  Steel:   10,000  |  Iron:     4,000  |  Bronze: 2,000
+//
+//  Max per region (wiki confirmed — every choosable region = exactly 10,000 pts):
+//    So a player with regions unlocked can earn:
+//      General (47,240) + Varlamore (2,750) + Karamja (1,730)
+//      + up to 3 more regions × 1,000 avg = ~54,720 base
+//    But Jagex confirmed every choosable region = exactly 10,000 pts each,
+//    so 3 additional regions = 30,000 pts, total possible = ~81,720 pts
+//    However the Dragon trophy only needs 65,000, which serves as our benchmark.
+//
+//  WEIGHTED PROGRESS = player_points / regional_max × 100
+//  regional_max = 47,240 (general) + 2,750 (Varlamore) + 1,730 (Karamja)
+//              + (count of optional regions × 10,000)
+//  If we don't know their regions, fall back to Dragon threshold (65,000).
+// ─────────────────────────────────────────────────────────────────────────────
+
+const TROPHY_TIERS = [
+  { name: "Dragon",  pts: 65000, icon: "🏆", cls: "tier-dragon"  },
+  { name: "Rune",    pts: 47500, icon: "⚔️",  cls: "tier-rune"   },
+  { name: "Adamant", pts: 32000, icon: "🛡️",  cls: "tier-adamant"},
+  { name: "Mithril", pts: 22000, icon: "💎",  cls: "tier-mithril"},
+  { name: "Steel",   pts: 10000, icon: "🔩",  cls: "tier-steel"  },
+  { name: "Iron",    pts:  4000, icon: "🔨",  cls: "tier-iron"   },
+  { name: "Bronze",  pts:  2000, icon: "🪙",  cls: "tier-bronze" },
+  { name: "—",       pts:     0, icon: "",    cls: "tier-none"   },
+];
+
+// Points available per region (from wiki confirmed data)
+// "Every choosable region has exactly 10,000 points of tasks"
+
+
+function calcRegionalMax(regions) {
+  // Every player can access exactly the same maximum: General + Varlamore + Karamja + 3 regions
+  // = 66,040 + 30,000 = 96,040  (confirmed from wiki: 146,040 total minus 8×10,000 optional)
+  return MAX_PTS;
+}
+
+function getTrophy(pts) {
+  for (const t of TROPHY_TIERS) {
+    if (pts >= t.pts) return t;
+  }
+  return TROPHY_TIERS[TROPHY_TIERS.length - 1];
+}
+
+function getNextTrophy(pts) {
+  for (let i = TROPHY_TIERS.length - 2; i >= 0; i--) {
+    if (pts < TROPHY_TIERS[i].pts) return TROPHY_TIERS[i];
+  }
+  return null; // already Dragon
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Other constants
 // ─────────────────────────────────────────────────────────────────────────────
 const BASE            = "https://secure.runescape.com";
 const LEADERBOARD_URL = `${BASE}/m=hiscore_oldschool_seasonal/overall.ws`;
 const LEADERBOARD_PRM = { category_type: 1, table: 1 };
 const TEMPLE_API      = "https://templeosrs.com/api/leagues/vi/tracking.php";
+const JAGEX_PLAYER_URL= `${BASE}/m=hiscore_oldschool_seasonal/index_lite.ws`;
 
 const AREA_MAP = {
   asgarnia:   "Asgarnia",
@@ -545,9 +464,7 @@ let sortCol     = "rank";
 let sortRev     = false;
 let debounceT   = null;
 let fetching    = false;
-
-// localStorage cache key
-const LS_KEY = "demonic_pacts_players";
+const LS_KEY    = "demonic_pacts_players_v2";
 
 function loadLocalCache() {
   try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch { return {}; }
@@ -559,10 +476,7 @@ function saveLocalCache(pc) {
 // ─────────────────────────────────────────────────────────────────────────────
 //  Proxy helpers
 // ─────────────────────────────────────────────────────────────────────────────
-function proxyUrl(target) {
-  return `${PROXY}?url=${encodeURIComponent(target)}`;
-}
-
+function proxyUrl(target) { return `${PROXY}?url=${encodeURIComponent(target)}`; }
 async function proxyGet(url) {
   const r = await fetch(proxyUrl(url));
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -591,9 +505,6 @@ function parseLeaderboard(html) {
   return players;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-//  Parse TempleOSRS regions
-// ─────────────────────────────────────────────────────────────────────────────
 function parseAreas(data) {
   const regions = [...ALWAYS_UNLOCKED];
   const areas = data?.info?.areas || {};
@@ -609,25 +520,18 @@ function parseAreas(data) {
 async function fetchLeaderboard() {
   if (fetching) return;
   fetching = true;
-
   const pages = Math.max(1, Math.min(parseInt(document.getElementById("pages-input").value) || 4, 25));
   const pc    = loadLocalCache();
-
   setStatus("Fetching leaderboard…", "gold");
   setBtnsDisabled(true);
   setProgress(0);
-
   const newPlayers = [];
-
   for (let page = 1; page <= pages; page++) {
     setStatus(`Fetching page ${page}/${pages}…`, "gold");
     setProgress(page / pages);
-
     const params = new URLSearchParams({ ...LEADERBOARD_PRM, page });
-    const url    = `${LEADERBOARD_URL}?${params}`;
-
     try {
-      const r    = await proxyGet(url);
+      const r    = await proxyGet(`${LEADERBOARD_URL}?${params}`);
       const html = await r.text();
       const rows = parseLeaderboard(html);
       if (rows.length === 0 && page > 1) break;
@@ -639,10 +543,8 @@ async function fetchLeaderboard() {
       setStatus(`Error on page ${page}: ${e.message}`, "red");
       break;
     }
-
     if (page < pages) await sleep(300);
   }
-
   allPlayers = newPlayers;
   filtered   = [...allPlayers];
   renderTable();
@@ -651,50 +553,36 @@ async function fetchLeaderboard() {
   setProgress(1);
   setBtnsDisabled(false);
   fetching = false;
-
-  // Update snapshot time
   document.getElementById("generated-time").innerHTML =
     `Live fetch<br>${new Date().toLocaleTimeString()}`;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Fetch regions (concurrent)
+//  Fetch regions
 // ─────────────────────────────────────────────────────────────────────────────
 async function fetchRegions() {
   if (fetching) return;
-  if (allPlayers.length === 0) {
-    setStatus("Fetch the leaderboard first.", "red");
-    return;
-  }
-
+  if (allPlayers.length === 0) { setStatus("Fetch the leaderboard first.", "red"); return; }
   fetching = true;
   setBtnsDisabled(true);
-
   const needs = allPlayers.filter(p => !p.regions || p.regions.length === 0);
   const total = needs.length;
-
   if (total === 0) {
     setStatus("All regions already fetched.", "green");
     setBtnsDisabled(false);
     fetching = false;
     return;
   }
-
-  const pc      = loadLocalCache();
-  let done      = 0;
-  let ok        = 0;
-  const BATCH   = 10; // concurrent requests
-
+  const pc = loadLocalCache();
+  let done = 0, ok = 0;
+  const BATCH = 10;
   setStatus(`Fetching regions for ${total.toLocaleString()} players…`, "gold");
   setProgress(0);
-
   for (let i = 0; i < needs.length; i += BATCH) {
     const batch = needs.slice(i, i + BATCH);
-
     await Promise.all(batch.map(async (player) => {
-      const url = `${TEMPLE_API}?player=${encodeURIComponent(player.name)}`;
       try {
-        const r    = await proxyGet(url);
+        const r    = await proxyGet(`${TEMPLE_API}?player=${encodeURIComponent(player.name)}`);
         const data = await r.json();
         if (!data.error && data.info) {
           player.regions = parseAreas(data);
@@ -703,19 +591,15 @@ async function fetchRegions() {
         } else {
           player.regions = [];
         }
-      } catch {
-        // leave regions empty
-      }
+      } catch { /* leave empty */ }
       done++;
     }));
-
     saveLocalCache(pc);
     setProgress(done / total);
     setStatus(`Regions [${done}/${total}]  ${ok} found  •  ${done - ok} untracked`, "gold");
-    applyFilter(); // refresh table live
-    await sleep(50); // small yield so UI stays responsive
+    applyFilter();
+    await sleep(50);
   }
-
   saveLocalCache(pc);
   applyFilter();
   setStatus(`Done — ${ok.toLocaleString()} regions found out of ${total.toLocaleString()} players.`, "green");
@@ -734,9 +618,7 @@ function chipHTML(region) {
 function escH(s) {
   return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
-function rankClass(r) {
-  return r===1?"r1":r===2?"r2":r===3?"r3":"rn";
-}
+function rankClass(r) { return r===1?"r1":r===2?"r2":r===3?"r3":"rn"; }
 
 function renderTable() {
   const tbody = document.getElementById("tbody");
@@ -751,25 +633,49 @@ function renderTable() {
   for (const p of filtered) {
     const row = document.createElement("div");
     row.className = "row" + (p._lookup ? " lookup-row" : "");
+
     const regions = p.regions || [];
     const regHTML = regions.length
       ? regions.map(chipHTML).join("")
       : '<span class="unknown-txt">Unknown</span>';
-    const osrsUrl = `https://secure.runescape.com/m=hiscore_oldschool_seasonal/hiscorepersonal.ws?user1=${encodeURIComponent(p.name)}`;
-    const rankDisp = p.rank   ? p.rank.toLocaleString()   : "—";
-    const ptsDisp  = p.points ? p.points.toLocaleString() : "—";
-    const pct      = p.points ? Math.min(100, (p.points / MAX_PTS) * 100) : 0;
-    const pctDisp  = p.points ? pct.toFixed(1) + "%" : "—";
-    const pctHigh  = pct >= 75 ? " pct-high" : "";
-    const pctHTML  = p.points
-      ? `<div class="pct-bar-wrap"><div class="pct-bar${pctHigh}" style="width:${pct.toFixed(1)}%"></div></div>${pctDisp}`
-      : "—";
+
+    const osrsUrl   = `${BASE}/m=hiscore_oldschool_seasonal/hiscorepersonal.ws?user1=${encodeURIComponent(p.name)}`;
+    const rankDisp  = p.rank   ? p.rank.toLocaleString()   : "—";
+    const ptsDisp   = p.points ? p.points.toLocaleString() : "—";
+
+    // ── Trophy ──
+    const trophy     = getTrophy(p.points || 0);
+    const nextTrophy = getNextTrophy(p.points || 0);
+    const trophyTip  = nextTrophy
+      ? `Next: ${nextTrophy.name} (${(nextTrophy.pts - (p.points||0)).toLocaleString()} pts away)`
+      : "Max trophy achieved!";
+
+    // ── Weighted progress ──
+    const regMax  = calcRegionalMax(regions);
+    const pts     = p.points || 0;
+    const pct     = regMax > 0 ? Math.min(100, (pts / regMax) * 100) : 0;
+    const pctDisp = pct.toFixed(1) + "%";
+    // Colour bar by current trophy tier
+    const barCls  = trophy.cls;
+    // Tooltip shows what the max is based on
+    const maxLabel = `vs max possible (${regMax.toLocaleString()} pts)`;
+
     row.innerHTML =
       `<div class="td td-rank ${p.rank ? rankClass(p.rank) : "rn"}">${rankDisp}</div>` +
       `<div class="td td-name"><a href="${osrsUrl}" target="_blank" rel="noopener">${escH(p.name)}</a></div>` +
       `<div class="td td-pts">${ptsDisp}</div>` +
-      `<div class="td td-pct">${pctHTML}</div>` +
-      `<div class="td td-regions">${regHTML}</div>`;
+      `<div class="td td-regions">${regHTML}</div>` +
+      `<div class="td td-trophy" title="${trophyTip}">` +
+        (trophy.icon ? `<span class="trophy-badge">${trophy.icon}</span>` : "") +
+        `<span class="trophy-label">${trophy.name}</span>` +
+      `</div>` +
+      `<div class="td td-progress" title="${ptsDisp} / ${regMax.toLocaleString()} pts — ${maxLabel}">` +
+        `<div class="prog-bar-wrap">` +
+          `<div class="prog-bar ${barCls}" style="width:${pct.toFixed(1)}%"></div>` +
+        `</div>` +
+        `<span class="prog-pct">${pctDisp}</span>` +
+      `</div>`;
+
     frag.appendChild(row);
   }
   tbody.innerHTML = "";
@@ -777,11 +683,8 @@ function renderTable() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Player lookup — fires on Enter or LOOKUP button when name not in table
+//  Player lookup
 // ─────────────────────────────────────────────────────────────────────────────
-
-const JAGEX_PLAYER_URL = "https://secure.runescape.com/m=hiscore_oldschool_seasonal/index_lite.ws";
-
 function setLookupBanner(state, msg) {
   const banner = document.getElementById("lookup-banner");
   banner.className = state ? `visible ${state}` : "";
@@ -791,49 +694,36 @@ function setLookupBanner(state, msg) {
 async function lookupPlayer() {
   const name = document.getElementById("search-input").value.trim();
   if (!name) return;
-
-  // Exact match already loaded — just confirm it
   const exact = allPlayers.find(p => p.name.toLowerCase() === name.toLowerCase());
   if (exact) {
+    const trophy = getTrophy(exact.points || 0);
+    const regMax = calcRegionalMax(exact.regions);
+    const pct    = exact.points ? ((exact.points / regMax) * 100).toFixed(1) : "0.0";
     if (!exact.regions || exact.regions.length === 0) {
-      setLookupBanner("found", `✔ ${exact.name} is already loaded — rank #${exact.rank ? exact.rank.toLocaleString() : "?"}. Regions unknown — please go track them on <a href="https://templeosrs.com/leagues/vi/tracking.php?player=${encodeURIComponent(exact.name)}" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">TempleOSRS</a> then refresh this page and refetch to see their regions.`);
+      setLookupBanner("found", `✔ ${exact.name} — rank #${exact.rank?.toLocaleString() || "?"} — Regions unknown (not tracked on TempleOSRS).`);
     } else {
-      setLookupBanner("found", `✔ ${exact.name} is already loaded — rank #${exact.rank ? exact.rank.toLocaleString() : "?"}.`);
+      setLookupBanner("found", `✔ ${exact.name} — rank #${exact.rank?.toLocaleString() || "?"} — ${trophy.icon} ${trophy.name} (${pct}% of regional max)`);
     }
     return;
   }
-
   const btn = document.getElementById("search-btn");
   btn.disabled = true;
   setLookupBanner("searching", `🔍 Looking up "${name}"…`);
-
   try {
     const [hiscoreResp, templeResp] = await Promise.allSettled([
-      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name.replace(/ /g, '_'))}`),
+      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name.replace(/ /g,'_'))}`),
       proxyGet(`${TEMPLE_API}?player=${encodeURIComponent(name)}`),
     ]);
-
     let rank = null, points = null, regions = [];
-
-    // Jagex index_lite CSV for seasonal hiscores:
-    // Lines 0-23 = skills (overall first), then activities follow.
-    // For Leagues VI, league points is the LAST line of the CSV.
-    // Each line: rank,level_or_score,xp (skills) or rank,score (activities)
     if (hiscoreResp.status === "fulfilled") {
       try {
         const text  = await hiscoreResp.value.text();
         const lines = text.trim().split("\n").map(l => l.trim()).filter(Boolean);
-
-        // Overall rank is always line 0, col 0
         if (lines.length > 0) {
-          const overallParts = lines[0].split(",");
-          const r = parseInt(overallParts[0]);
+          const r = parseInt(lines[0].split(",")[0]);
           if (!isNaN(r) && r > 0) rank = r;
         }
-
-        // League points: last line of the CSV, format "rank,score"
-        // Also try scanning all activity lines (after the 24 skill lines) for the highest score
-        const activityLines = lines.slice(24); // skip 24 skill lines
+        const activityLines = lines.slice(24);
         let bestPts = 0;
         for (const line of activityLines) {
           const parts = line.split(",");
@@ -841,16 +731,8 @@ async function lookupPlayer() {
           if (!isNaN(score) && score > bestPts) bestPts = score;
         }
         if (bestPts > 0) points = bestPts;
-
-        // Fallback: if no activity lines found, try overall line col 1
-        if (!points && lines.length > 0) {
-          const p = parseInt(lines[0].split(",")[1]);
-          if (!isNaN(p) && p > 0) points = p;
-        }
       } catch {}
     }
-
-    // TempleOSRS regions
     if (templeResp.status === "fulfilled") {
       try {
         const data = await templeResp.value.json();
@@ -862,30 +744,27 @@ async function lookupPlayer() {
         }
       } catch {}
     }
-
     if (!rank && !points && regions.length === 0) {
-      setLookupBanner("notfound", `✘ "${name}" not found — they may not be on the seasonal hiscores.`);
+      setLookupBanner("notfound", `✘ "${name}" not found on the seasonal hiscores.`);
       btn.disabled = false;
       return;
     }
-
-    // Remove any previous manual lookup for this name
     const idx = allPlayers.findIndex(p => p._lookup && p.name.toLowerCase() === name.toLowerCase());
     if (idx !== -1) allPlayers.splice(idx, 1);
-
     const player = { rank, name, points: points || 0, regions, _lookup: true };
     allPlayers.unshift(player);
     applyFilter();
-
-    const rankStr = rank   ? `rank #${rank.toLocaleString()}`   : "unranked";
-    const ptsStr  = points ? `${points.toLocaleString()} pts`   : "no points data";
-    const regStr  = regions.length ? regions.join(", ")         : "no region data";
-    setLookupBanner("found", `✔ Found ${player.name} — ${rankStr}, ${ptsStr} | Regions: ${regStr}`);
-
+    const trophy  = getTrophy(player.points);
+    const regMax  = calcRegionalMax(regions);
+    const pct     = player.points ? ((player.points / regMax) * 100).toFixed(1) : "0.0";
+    const regStr  = regions.length ? regions.join(", ") : "unknown";
+    const rankStr = rank ? `rank #${rank.toLocaleString()}` : "unranked";
+    const ptsStr  = points ? `${points.toLocaleString()} pts` : "no points";
+    setLookupBanner("found",
+      `✔ ${player.name} — ${rankStr}, ${ptsStr} — ${trophy.icon} ${trophy.name} (${pct}% of regional max) — Regions: ${regStr}`);
   } catch (e) {
     setLookupBanner("notfound", `✘ Lookup failed: ${e.message}`);
   }
-
   btn.disabled = false;
 }
 
@@ -893,12 +772,11 @@ async function lookupPlayer() {
 //  Filter + sort
 // ─────────────────────────────────────────────────────────────────────────────
 function applyFilter() {
-  const query   = document.getElementById("search-input").value.toLowerCase().trim();
-  const selSet  = new Set(
+  const query  = document.getElementById("search-input").value.toLowerCase().trim();
+  const selSet = new Set(
     Array.from(document.querySelectorAll("#region-list input:checked")).map(cb => cb.value.toLowerCase())
   );
-  const mode    = document.querySelector("input[name=matchmode]:checked").value;
-
+  const mode = document.querySelector("input[name=matchmode]:checked").value;
   let result = allPlayers;
   if (query)       result = result.filter(p => p.name.toLowerCase().includes(query));
   if (selSet.size) {
@@ -909,30 +787,36 @@ function applyFilter() {
         : [...selSet].some(r  => pr.has(r));
     });
   }
-
   filtered = result;
   renderTable();
   updateStats();
 }
 
 function sortPlayers(col) {
-  sortRev = sortCol === col ? !sortRev : col === "points";
+  sortRev = sortCol === col ? !sortRev : col === "points" || col === "progress" || col === "trophy";
   sortCol = col;
-
-  allPlayers.sort((a,b) => {
-    let va = col==="regions" ? (a.regions||[]).length
-           : col==="name"    ? a.name.toLowerCase()
-           : col==="pct"     ? (a.points||0)
-           : a[col]||0;
-    let vb = col==="regions" ? (b.regions||[]).length
-           : col==="name"    ? b.name.toLowerCase()
-           : col==="pct"     ? (b.points||0)
-           : b[col]||0;
-    if (va<vb) return sortRev?1:-1;
-    if (va>vb) return sortRev?-1:1;
+  allPlayers.sort((a, b) => {
+    let va, vb;
+    if (col === "regions") {
+      va = (a.regions||[]).length; vb = (b.regions||[]).length;
+    } else if (col === "name") {
+      va = a.name.toLowerCase(); vb = b.name.toLowerCase();
+    } else if (col === "trophy") {
+      // Sort by points (which determines trophy)
+      va = a.points || 0; vb = b.points || 0;
+    } else if (col === "progress") {
+      // Sort by % of regional max (weighted)
+      const maxA = calcRegionalMax(a.regions);
+      const maxB = calcRegionalMax(b.regions);
+      va = maxA > 0 ? (a.points || 0) / maxA : 0;
+      vb = maxB > 0 ? (b.points || 0) / maxB : 0;
+    } else {
+      va = a[col] || 0; vb = b[col] || 0;
+    }
+    if (va < vb) return sortRev ? 1 : -1;
+    if (va > vb) return sortRev ? -1 : 1;
     return 0;
   });
-
   document.querySelectorAll(".th").forEach(th => {
     const arrow = th.querySelector(".sort-arrow");
     if (th.dataset.col === col) {
@@ -943,12 +827,11 @@ function sortPlayers(col) {
       arrow.textContent = "";
     }
   });
-
   applyFilter();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Stats + UI helpers
+//  Stats + helpers
 // ─────────────────────────────────────────────────────────────────────────────
 function updateStats() {
   const total = allPlayers.length;
@@ -956,34 +839,33 @@ function updateStats() {
   document.getElementById("count-label").textContent  = `Showing ${filtered.length.toLocaleString()} / ${total.toLocaleString()}`;
   document.getElementById("region-label").textContent = `│  Regions: ${known.toLocaleString()}/${total.toLocaleString()}`;
 }
-
 function setStatus(msg, color="dim") {
   const el = document.getElementById("status-text");
   el.style.color = {gold:"#c8a84b",green:"#3a8a3a",red:"#c0392b",dim:"#888070"}[color]||"#888070";
   el.textContent = msg;
 }
-
 function setProgress(frac) {
   document.getElementById("progress-bar").style.width = `${Math.round(frac*100)}%`;
 }
-
 function setBtnsDisabled(dis) {
   document.getElementById("btn-fetch-lb").disabled  = dis;
   document.getElementById("btn-fetch-reg").disabled = dis;
-  document.getElementById("btn-fetch-lb").textContent  = dis ? "⏳ FETCHING…"       : "⚔ FETCH LEADERBOARD";
-  document.getElementById("btn-fetch-reg").textContent = dis ? "⏳ FETCHING…"       : "🗺 FETCH REGIONS";
+  document.getElementById("btn-fetch-lb").textContent  = dis ? "⏳ FETCHING…" : "⚔ FETCH LEADERBOARD";
+  document.getElementById("btn-fetch-reg").textContent = dis ? "⏳ FETCHING…" : "🗺 FETCH REGIONS";
 }
-
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 function exportCSV() {
-  const rows = ["Rank,Name,LeaguePoints,Regions"];
+  const rows = ["Rank,Name,LeaguePoints,Trophy,WeightedPct,RegionalMax,Regions"];
   for (const p of filtered) {
-    const rstr = (p.regions||[]).join("|") || "Unknown";
-    rows.push(`${p.rank},"${p.name}",${p.points},"${rstr}"`);
+    const trophy  = getTrophy(p.points || 0);
+    const regMax  = calcRegionalMax(p.regions);
+    const pct     = p.points ? ((p.points / regMax) * 100).toFixed(1) : "0.0";
+    const rstr    = (p.regions||[]).join("|") || "Unknown";
+    rows.push(`${p.rank},"${p.name}",${p.points},"${trophy.name}",${pct}%,${regMax},"${rstr}"`);
   }
-  const a    = document.createElement("a");
-  a.href     = URL.createObjectURL(new Blob([rows.join("\n")],{type:"text/csv"}));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([rows.join("\n")],{type:"text/csv"}));
   a.download = "league_export.csv";
   a.click();
   URL.revokeObjectURL(a.href);
@@ -1012,18 +894,15 @@ function buildRegionList() {
 // ─────────────────────────────────────────────────────────────────────────────
 async function init() {
   buildRegionList();
-
   document.getElementById("search-input").addEventListener("input", () => {
     clearTimeout(debounceT);
     debounceT = setTimeout(applyFilter, 180);
   });
-  document.getElementById("search-input").addEventListener("keydown", (e) => {
+  document.getElementById("search-input").addEventListener("keydown", e => {
     if (e.key === "Enter") lookupPlayer();
   });
   document.getElementById("search-btn").addEventListener("click", lookupPlayer);
-  document.getElementById("lookup-dismiss").addEventListener("click", () => {
-    setLookupBanner(null, "");
-  });
+  document.getElementById("lookup-dismiss").addEventListener("click", () => setLookupBanner(null,""));
   document.getElementById("clear-btn").addEventListener("click", () => {
     document.querySelectorAll("#region-list input").forEach(cb => cb.checked=false);
     document.getElementById("search-input").value = "";
@@ -1031,8 +910,8 @@ async function init() {
   });
   document.getElementById("btn-fetch-lb").addEventListener("click",  fetchLeaderboard);
   document.getElementById("btn-fetch-reg").addEventListener("click", fetchRegions);
-  document.getElementById("export-btn").addEventListener("click",        exportCSV);
-  document.getElementById("sidebar-export-btn").addEventListener("click",exportCSV);
+  document.getElementById("export-btn").addEventListener("click",         exportCSV);
+  document.getElementById("sidebar-export-btn").addEventListener("click", exportCSV);
   document.querySelectorAll(".th").forEach(th =>
     th.addEventListener("click", () => sortPlayers(th.dataset.col))
   );
@@ -1040,32 +919,28 @@ async function init() {
     r.addEventListener("change", applyFilter)
   );
 
-  // Try loading leaderboard_data.json first (from GitHub Action)
+  // Load snapshot
   try {
     const resp = await fetch("leaderboard_data.json");
     if (!resp.ok) throw new Error("no json");
     const data = await resp.json();
     const pc   = loadLocalCache();
-
     allPlayers = (data.players || []).map(p => ({
       ...p,
       regions: pc[p.name] || p.regions || [],
     }));
     filtered = [...allPlayers];
-
     if (data.generated) {
       const d = new Date(data.generated);
       document.getElementById("generated-time").innerHTML =
         `Last auto-update<br>${d.toLocaleDateString()} ${d.toLocaleTimeString()}`;
     }
-
     renderTable();
     updateStats();
     setStatus(`${allPlayers.length.toLocaleString()} players loaded from snapshot. Hit Fetch to refresh.`, "gold");
   } catch {
-    setStatus("No snapshot found — hit ⚔ FETCH LEADERBOARD to load data.", "dim");
+    setStatus("No snapshot — hit ⚔ FETCH LEADERBOARD to load data.", "dim");
   }
-
   document.getElementById("loading").style.display = "none";
   document.getElementById("app").style.display     = "flex";
 }
