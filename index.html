@@ -988,18 +988,25 @@ function buildRegionList() {
     const cb = document.createElement("input");
     cb.type = "checkbox"; cb.value = region;
     cb.addEventListener("change", () => {
-      const checked = document.querySelectorAll("#region-list input:checked");
-      const msg = document.getElementById("region-limit-msg");
-      if (checked.length > 3) {
+      const allCbs = document.querySelectorAll("#region-list input");
+      const msg    = document.getElementById("region-limit-msg");
+      // Count how many are checked RIGHT NOW (after this change event fired)
+      const checkedCount = Array.from(allCbs).filter(c => c.checked).length;
+      if (checkedCount > 3) {
+        // Revert this checkbox — user tried to select a 4th
         cb.checked = false;
         msg.style.display = "block";
+        // Don't return — still call applyFilter so table reflects current 3 selections
+        applyFilter();
         return;
       }
+      // Hide error once back to 3 or fewer
       msg.style.display = "none";
       applyFilter();
     });
+    // Append cb first, then add the text as a text node — avoids innerHTML clobbering the listener
     label.appendChild(cb);
-    label.innerHTML += region;
+    label.appendChild(document.createTextNode(region));
     list.appendChild(label);
   });
 }
