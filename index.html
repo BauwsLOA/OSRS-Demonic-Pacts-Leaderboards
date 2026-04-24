@@ -281,6 +281,9 @@
       <div id="progress-wrap"><div id="progress-bar"></div></div>
 
       <div class="sb-divider"></div>
+      <div id="region-limit-msg" style="display:none;margin:0 12px 4px;padding:5px 8px;background:#2a0808;border:1px solid var(--red);border-radius:3px;font-size:9px;color:#ffaaaa;">
+        Max 3 regions can be selected at once.
+      </div>
       <div class="sb-section">FILTER BY REGION</div>
       <div class="match-mode">
         <label><input type="radio" name="matchmode" value="any" checked> Match ANY</label>
@@ -976,15 +979,27 @@ function exportCSV() {
 // ─────────────────────────────────────────────────────────────────────────────
 function buildRegionList() {
   const list = document.getElementById("region-list");
-  ALL_REGIONS.forEach(region => {
+  // Varlamore and Karamja are excluded — every player has them by default
+  // so they add no filtering value.
+  const filterableRegions = ALL_REGIONS.filter(r => !ALWAYS_UNLOCKED.includes(r));
+  filterableRegions.forEach(region => {
     const label = document.createElement("label");
     label.className = "region-cb";
     const cb = document.createElement("input");
     cb.type = "checkbox"; cb.value = region;
-    cb.addEventListener("change", applyFilter);
+    cb.addEventListener("change", () => {
+      const checked = document.querySelectorAll("#region-list input:checked");
+      const msg = document.getElementById("region-limit-msg");
+      if (checked.length > 3) {
+        cb.checked = false;
+        msg.style.display = "block";
+        return;
+      }
+      msg.style.display = "none";
+      applyFilter();
+    });
     label.appendChild(cb);
-    const star = ALWAYS_UNLOCKED.includes(region) ? ' <span class="star">★</span>' : "";
-    label.innerHTML += region + star;
+    label.innerHTML += region;
     list.appendChild(label);
   });
 }
@@ -1005,6 +1020,7 @@ async function init() {
   document.getElementById("lookup-dismiss").addEventListener("click", () => setLookupBanner(null,""));
   document.getElementById("clear-btn").addEventListener("click", () => {
     document.querySelectorAll("#region-list input").forEach(cb => cb.checked=false);
+    document.getElementById("region-limit-msg").style.display = "none";
     document.getElementById("search-input").value = "";
     applyFilter();
   });
@@ -1016,7 +1032,7 @@ async function init() {
     th.addEventListener("click", () => sortPlayers(th.dataset.col))
   );
   document.querySelectorAll("input[name=matchmode]").forEach(r =>
-    r.addEventListener("change", applyFilter)
+    r.addEventListener("click", applyFilter)
   );
 
   // Load snapshot
