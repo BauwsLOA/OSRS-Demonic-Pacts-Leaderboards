@@ -1,5 +1,4 @@
 name: Update Leaderboard Data
-
 on:
   schedule:
     # Runs every 6 hours. Adjust as needed:
@@ -8,34 +7,28 @@ on:
     # "0 * * * *"    = every hour
     # "*/30 * * * *" = every 30 minutes
     - cron: "0 * * * *"
-
   # Also allows you to trigger it manually from the Actions tab
   workflow_dispatch:
-
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6
-
+        uses: actions/checkout@v5
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: pip install requests
-
       - name: Run exporter
         run: python export_leaderboard.py --pages 20
-
       - name: Commit updated data
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add leaderboard_data.json league_cache.json
-          # Only commit if something actually changed
           git diff --staged --quiet || git commit -m "chore: update leaderboard data [skip ci]"
           git push
+      - name: Update Discord bot avatar
+        run: curl -s "https://osrs-proxy.bauwsloa.workers.dev/update-avatar?secret=cheesesticks"
