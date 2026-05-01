@@ -1,15 +1,13 @@
 <div align="center">
+
 <img src="https://oldschool.runescape.wiki/images/Demonic_Pacts_League_logo.png?4aaa2" alt="Demonic Pacts Logo" width="340"/>
-
-
 
 # OSRS Demonic Pacts League Leaderboard
 
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Visit-c8a84b?style=for-the-badge&logo=github&labelColor=0d0d0d)](https://bauwsloa.github.io/OSRS-Demonic-Pacts-Leaderboards/)
 [![Auto Update](https://img.shields.io/badge/Auto%20Update-Hourly-2d6a2d?style=for-the-badge&logo=github-actions&labelColor=0d0d0d)](https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards/actions)
 ![Countdown](https://img.shields.io/endpoint?url=https://osrs-proxy.bauwsloa.workers.dev/?countdown&style=for-the-badge&labelColor=0d0d0d)
-![Visitors](https://img.shields.io/badge/dynamic/json?url=https://osrs-demonic-pacts.goatcounter.com/api/v0/stats/total&query=$.total&label=visitors&color=c8a84b&labelColor=0d0d0d&style=for-the-badge)
-![Visitors](https://osrs-demonic-pacts.goatcounter.com/counter/visits.svg)
+![Visitors](https://img.shields.io/endpoint?url=https://osrs-proxy.bauwsloa.workers.dev/?visitors&style=for-the-badge&labelColor=0d0d0d&cacheSeconds=0)
 
 **Leagues VI: Demonic Pacts — April 15 to June 10, 2026**
 
@@ -41,10 +39,11 @@ Auto updates the rankings or on-demand with manual **Fetch** buttons
 1. Enter the desired amount of pages from the highscore to scrape
 2. Press **Fetch Leaderboards**
 3. Press **Fetch Regions**
-   
->Maximum fetchable highscore pages is set to 25 (each page has 25 players for a total of top 625), if the character you want to lookup is not within that range then type the RSN in the search bar and hit **Lookup**, it will then specifically fetch that player's data and present it at the top of the list.
 
-> If a player's regions show as **Unknown**, search their name and hit **Lookup** — a link will appear in the banner to their TempleOSRS page where you can submit a tracking request. Their region data will be available after they are tracked.
+> Maximum fetchable highscore pages is set to 25 (each page has 25 players for a total of top 625), if the character you want to lookup is not within that range then type the RSN in the search bar and hit **Lookup**, it will then specifically fetch that player's data and present it at the top of the list.
+
+> If a player's regions show as **Unknown**, search their name and hit **Lookup** — a link will appear in the banner to their TempleOSRS page where you can submit a tracking request.  
+> Their region data will be available after they are tracked.
 
 </div>
 
