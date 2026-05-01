@@ -252,6 +252,47 @@
     color: var(--text-dim); font-family: 'Share Tech Mono', monospace; font-size: 10px;
     padding: 2px 8px; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
   #export-btn:hover { color: var(--text-white); border-color: var(--gold-dim); }
+
+  /* ── Off-season waiting page ── */
+  #waiting {
+    display: none;
+    position: fixed; inset: 0;
+    background: var(--bg-dark);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 50;
+  }
+  #waiting.visible { display: flex; }
+  #waiting img {
+    height: 80px;
+    width: auto;
+  }
+  #waiting h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: 26px;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  #waiting p {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: center;
+    line-height: 1.8;
+    max-width: 360px;
+  }
+  #waiting .divider {
+    width: 200px;
+    height: 1px;
+    background: var(--gold-dim);
+  }
+  #waiting .ended-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
 </style>
 </head>
 <body>
@@ -262,6 +303,23 @@
     style="height:64px; width:auto; display:block; margin-bottom:4px;">
   <h2>Demonic Pacts League</h2>
   <p>Loading leaderboard data…</p>
+</div>
+
+<!-- Off-season waiting page — shown 7 days after league ends -->
+<div id="waiting">
+  <img id="waiting-logo" alt="League Logo">
+  <div class="divider"></div>
+  <h1 id="waiting-title">WAITING FOR NEW LEAGUE</h1>
+  <p id="waiting-subtitle">The league has ended.<br>Check back when the next league is announced.</p>
+  <span class="ended-label" id="waiting-ended"></span>
+  <div class="divider"></div>
+  <p style="font-size:10px; color:var(--text-muted);">
+    <a href="https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards" target="_blank" rel="noopener"
+       style="color:var(--gold-dim); text-decoration:none;"
+       onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gold-dim)'">
+      GitHub
+    </a>
+  </p>
 </div>
 
 <div id="app" style="display:none;">
@@ -1035,6 +1093,24 @@ async function init() {
   document.getElementById("header-logo").src  = CONFIG.leagueLogoUrl;
   document.getElementById("loading-logo").src = CONFIG.leagueLogoUrl;
 
+  // ── Off-season check ──
+  // Show waiting page if we are more than 7 days past the league end date
+  const leagueEndDate = new Date(CONFIG.leagueEnd);
+  const sevenDaysAfter = new Date(leagueEndDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+  const now = new Date();
+  if (now > sevenDaysAfter) {
+    const waiting = document.getElementById("waiting");
+    document.getElementById("waiting-logo").src = CONFIG.leagueLogoUrl;
+    document.getElementById("waiting-title").textContent = "WAITING FOR NEW LEAGUE";
+    document.getElementById("waiting-subtitle").innerHTML =
+      `Leagues ${CONFIG.leagueNumber}: ${CONFIG.leagueName} has ended.<br>Check back when the next league is announced.`;
+    document.getElementById("waiting-ended").textContent =
+      `ENDED ${leagueEndDate.toLocaleDateString(undefined, { year:"numeric", month:"long", day:"numeric" }).toUpperCase()}`;
+    waiting.classList.add("visible");
+    document.getElementById("loading").style.display = "none";
+    return;
+  }
+
   buildRegionList();
   document.getElementById("search-input").addEventListener("input", () => {
     clearTimeout(debounceT);
@@ -1098,5 +1174,6 @@ async function init() {
 
 init();
 </script>
+<script data-goatcounter="https://osrs-demonic-pacts.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
