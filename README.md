@@ -5,9 +5,9 @@
 # OSRS Demonic Pacts League Leaderboard
 
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Visit-c8a84b?style=for-the-badge&logo=github&labelColor=0d0d0d)](https://bauwsloa.github.io/OSRS-Demonic-Pacts-Leaderboards/)
+![Visitors](https://img.shields.io/endpoint?url=https://osrs-proxy.bauwsloa.workers.dev/?visitors&style=for-the-badge&labelColor=0d0d0d&cacheSeconds=0)
 [![Auto Update](https://img.shields.io/badge/Auto%20Update-Hourly-2d6a2d?style=for-the-badge&logo=github-actions&labelColor=0d0d0d)](https://github.com/BauwsLOA/OSRS-Demonic-Pacts-Leaderboards/actions)
 ![Countdown](https://img.shields.io/endpoint?url=https://osrs-proxy.bauwsloa.workers.dev/?countdown&style=for-the-badge&labelColor=0d0d0d)
-![Visitors](https://img.shields.io/endpoint?url=https://osrs-proxy.bauwsloa.workers.dev/?visitors&style=for-the-badge&labelColor=0d0d0d&cacheSeconds=0)
 
 **Leagues VI: Demonic Pacts — April 15 to June 10, 2026**
 
