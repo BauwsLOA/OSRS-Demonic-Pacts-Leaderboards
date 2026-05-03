@@ -884,7 +884,7 @@ async function lookupPlayer() {
   setLookupBanner("searching", `🔍 Looking up "${name}"…`);
   try {
     const [hiscoreResp, templeResp] = await Promise.allSettled([
-      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name.replace(/ /g,'_'))}`),
+      proxyGet(`${JAGEX_PLAYER_URL}?player=${encodeURIComponent(name)}`),
       proxyGet(`${TEMPLE_API}?player=${encodeURIComponent(name)}`),
     ]);
     let rank = null, points = null, regions = [];
