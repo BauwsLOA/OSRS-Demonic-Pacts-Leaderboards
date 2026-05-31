@@ -5033,7 +5033,8 @@
       "Tirannwn",
       "Wilderness",
       "Kebos and Kourend"
-    ]
+    ],
+    "ZamoraksRage": []
   },
   "leaderboard": [
     {
@@ -7042,6 +7043,18 @@
     },
     {
       "rank": 184,
+      "name": "Kitten Aethy",
+      "points": 96040,
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Morytania",
+        "Kebos and Kourend"
+      ]
+    },
+    {
+      "rank": 185,
       "name": "0ukashi",
       "points": 96010,
       "regions": [
@@ -7053,7 +7066,7 @@
       ]
     },
     {
-      "rank": 185,
+      "rank": 186,
       "name": "Fe IV",
       "points": 96010,
       "regions": [
@@ -7065,7 +7078,7 @@
       ]
     },
     {
-      "rank": 186,
+      "rank": 187,
       "name": "Kuratheangel",
       "points": 96010,
       "regions": [
@@ -7077,7 +7090,7 @@
       ]
     },
     {
-      "rank": 187,
+      "rank": 188,
       "name": "Teleblock",
       "points": 95810,
       "regions": [
@@ -7089,7 +7102,7 @@
       ]
     },
     {
-      "rank": 188,
+      "rank": 189,
       "name": "Kind Ghost",
       "points": 95640,
       "regions": [
@@ -7101,7 +7114,7 @@
       ]
     },
     {
-      "rank": 189,
+      "rank": 190,
       "name": "Kepuck",
       "points": 95640,
       "regions": [
@@ -7113,7 +7126,7 @@
       ]
     },
     {
-      "rank": 190,
+      "rank": 191,
       "name": "D runk",
       "points": 95640,
       "regions": [
@@ -7125,7 +7138,7 @@
       ]
     },
     {
-      "rank": 191,
+      "rank": 192,
       "name": "Abysmal Luck",
       "points": 95640,
       "regions": [
@@ -7137,7 +7150,7 @@
       ]
     },
     {
-      "rank": 192,
+      "rank": 193,
       "name": "Kacy",
       "points": 95640,
       "regions": [
@@ -7149,7 +7162,7 @@
       ]
     },
     {
-      "rank": 193,
+      "rank": 194,
       "name": "Zwiers",
       "points": 95640,
       "regions": [
@@ -7161,22 +7174,10 @@
       ]
     },
     {
-      "rank": 194,
+      "rank": 195,
       "name": "Zarksys",
       "points": 95640,
       "regions": []
-    },
-    {
-      "rank": 195,
-      "name": "Kitten Aethy",
-      "points": 95640,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Kebos and Kourend"
-      ]
     },
     {
       "rank": 196,
@@ -7378,18 +7379,36 @@
     },
     {
       "rank": 215,
+      "name": "UncomfyPants",
+      "points": 95040,
+      "regions": []
+    },
+    {
+      "rank": 216,
+      "name": "Bvjorksy",
+      "points": 95040,
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Asgarnia",
+        "Desert",
+        "Kebos and Kourend"
+      ]
+    },
+    {
+      "rank": 217,
       "name": "OWCA_UwU",
       "points": 95010,
       "regions": []
     },
     {
-      "rank": 216,
+      "rank": 218,
       "name": "Old Rivian",
       "points": 95010,
       "regions": []
     },
     {
-      "rank": 217,
+      "rank": 219,
       "name": "Remtro",
       "points": 95010,
       "regions": [
@@ -7401,7 +7420,7 @@
       ]
     },
     {
-      "rank": 218,
+      "rank": 220,
       "name": "Smartpants77",
       "points": 94840,
       "regions": [
@@ -7413,7 +7432,7 @@
       ]
     },
     {
-      "rank": 219,
+      "rank": 221,
       "name": "krissandm",
       "points": 94840,
       "regions": [
@@ -7425,25 +7444,13 @@
       ]
     },
     {
-      "rank": 220,
-      "name": "Bvjorksy",
-      "points": 94840,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Asgarnia",
-        "Desert",
-        "Kebos and Kourend"
-      ]
-    },
-    {
-      "rank": 221,
+      "rank": 222,
       "name": "Mole Druid",
       "points": 94840,
       "regions": []
     },
     {
-      "rank": 222,
+      "rank": 223,
       "name": "Tenhou",
       "points": 94810,
       "regions": [
@@ -7455,7 +7462,7 @@
       ]
     },
     {
-      "rank": 223,
+      "rank": 224,
       "name": "ttortt",
       "points": 94640,
       "regions": [
@@ -7467,7 +7474,7 @@
       ]
     },
     {
-      "rank": 224,
+      "rank": 225,
       "name": "Gary Parry",
       "points": 94640,
       "regions": [
@@ -7479,7 +7486,7 @@
       ]
     },
     {
-      "rank": 225,
+      "rank": 226,
       "name": "Valdevon",
       "points": 94640,
       "regions": [
@@ -7491,7 +7498,7 @@
       ]
     },
     {
-      "rank": 226,
+      "rank": 227,
       "name": "PureUanubis",
       "points": 94640,
       "regions": [
@@ -7503,20 +7510,14 @@
       ]
     },
     {
-      "rank": 227,
+      "rank": 228,
       "name": "The OSU",
       "points": 94640,
       "regions": []
     },
     {
-      "rank": 228,
-      "name": "R N G Pwnz5",
-      "points": 94640,
-      "regions": []
-    },
-    {
       "rank": 229,
-      "name": "UncomfyPants",
+      "name": "R N G Pwnz5",
       "points": 94640,
       "regions": []
     },
@@ -7540,26 +7541,8 @@
     },
     {
       "rank": 232,
-      "name": "Corona Bat",
-      "points": 94560,
-      "regions": []
-    },
-    {
-      "rank": 233,
-      "name": "Crondie",
-      "points": 94560,
-      "regions": []
-    },
-    {
-      "rank": 234,
-      "name": "I am J M E",
-      "points": 94440,
-      "regions": []
-    },
-    {
-      "rank": 235,
       "name": "Iron Yaky",
-      "points": 94440,
+      "points": 94640,
       "regions": [
         "Varlamore",
         "Karamja",
@@ -7567,6 +7550,24 @@
         "Tirannwn",
         "Kebos and Kourend"
       ]
+    },
+    {
+      "rank": 233,
+      "name": "Corona Bat",
+      "points": 94560,
+      "regions": []
+    },
+    {
+      "rank": 234,
+      "name": "Crondie",
+      "points": 94560,
+      "regions": []
+    },
+    {
+      "rank": 235,
+      "name": "I am J M E",
+      "points": 94440,
+      "regions": []
     },
     {
       "rank": 236,
@@ -7678,12 +7679,18 @@
     },
     {
       "rank": 247,
+      "name": "BrutalMcBlak",
+      "points": 94070,
+      "regions": []
+    },
+    {
+      "rank": 248,
       "name": "TakinShots",
       "points": 94040,
       "regions": []
     },
     {
-      "rank": 248,
+      "rank": 249,
       "name": "Suity",
       "points": 94040,
       "regions": [
@@ -7695,7 +7702,7 @@
       ]
     },
     {
-      "rank": 249,
+      "rank": 250,
       "name": "HairyHands",
       "points": 94040,
       "regions": [
@@ -7707,13 +7714,13 @@
       ]
     },
     {
-      "rank": 250,
+      "rank": 251,
       "name": "SkillerC4",
       "points": 94040,
       "regions": []
     },
     {
-      "rank": 251,
+      "rank": 252,
       "name": "Brendonnee",
       "points": 93960,
       "regions": [
@@ -7725,7 +7732,7 @@
       ]
     },
     {
-      "rank": 252,
+      "rank": 253,
       "name": "IBuyGP",
       "points": 93960,
       "regions": [
@@ -7737,7 +7744,7 @@
       ]
     },
     {
-      "rank": 253,
+      "rank": 254,
       "name": "Acdh Leagues",
       "points": 93930,
       "regions": [
@@ -7749,7 +7756,7 @@
       ]
     },
     {
-      "rank": 254,
+      "rank": 255,
       "name": "Speed Wobble",
       "points": 93920,
       "regions": [
@@ -7761,13 +7768,13 @@
       ]
     },
     {
-      "rank": 255,
+      "rank": 256,
       "name": "zeus energy",
       "points": 93870,
       "regions": []
     },
     {
-      "rank": 256,
+      "rank": 257,
       "name": "TurboSueless",
       "points": 93840,
       "regions": [
@@ -7779,7 +7786,7 @@
       ]
     },
     {
-      "rank": 257,
+      "rank": 258,
       "name": "Grimy Oppie",
       "points": 93840,
       "regions": [
@@ -7791,13 +7798,13 @@
       ]
     },
     {
-      "rank": 258,
+      "rank": 259,
       "name": "Lightcat",
       "points": 93840,
       "regions": []
     },
     {
-      "rank": 259,
+      "rank": 260,
       "name": "PhreakyPhrog",
       "points": 93840,
       "regions": [
@@ -7809,7 +7816,7 @@
       ]
     },
     {
-      "rank": 260,
+      "rank": 261,
       "name": "Kebap Lover",
       "points": 93840,
       "regions": [
@@ -7821,13 +7828,13 @@
       ]
     },
     {
-      "rank": 261,
+      "rank": 262,
       "name": "N P L E",
       "points": 93780,
       "regions": []
     },
     {
-      "rank": 262,
+      "rank": 263,
       "name": "rautsa123",
       "points": 93760,
       "regions": [
@@ -7839,19 +7846,19 @@
       ]
     },
     {
-      "rank": 263,
-      "name": "BrutalMcBlak",
-      "points": 93670,
+      "rank": 264,
+      "name": "Litewarior",
+      "points": 93760,
       "regions": []
     },
     {
-      "rank": 264,
+      "rank": 265,
       "name": "A Windmill",
       "points": 93640,
       "regions": []
     },
     {
-      "rank": 265,
+      "rank": 266,
       "name": "lil Stoobie",
       "points": 93640,
       "regions": [
@@ -7863,49 +7870,49 @@
       ]
     },
     {
-      "rank": 266,
+      "rank": 267,
       "name": "Alt Zihark",
       "points": 93640,
       "regions": []
     },
     {
-      "rank": 267,
+      "rank": 268,
       "name": "Iron H1Mmel",
       "points": 93640,
       "regions": []
     },
     {
-      "rank": 268,
+      "rank": 269,
       "name": "Bwana II",
       "points": 93640,
       "regions": []
     },
     {
-      "rank": 269,
-      "name": "Litewarior",
-      "points": 93560,
+      "rank": 270,
+      "name": "KingCowNat",
+      "points": 93640,
       "regions": []
     },
     {
-      "rank": 270,
+      "rank": 271,
       "name": "eL Destroyer",
       "points": 93530,
       "regions": []
     },
     {
-      "rank": 271,
+      "rank": 272,
       "name": "SamIM",
       "points": 93530,
       "regions": []
     },
     {
-      "rank": 272,
+      "rank": 273,
       "name": "GIM Keo",
       "points": 93500,
       "regions": []
     },
     {
-      "rank": 273,
+      "rank": 274,
       "name": "IronKenna",
       "points": 93450,
       "regions": [
@@ -7917,7 +7924,7 @@
       ]
     },
     {
-      "rank": 274,
+      "rank": 275,
       "name": "jere larm",
       "points": 93440,
       "regions": [
@@ -7929,20 +7936,14 @@
       ]
     },
     {
-      "rank": 275,
+      "rank": 276,
       "name": "BurdTheTurd",
       "points": 93440,
       "regions": []
     },
     {
-      "rank": 276,
-      "name": "JoeyyPlays",
-      "points": 93440,
-      "regions": []
-    },
-    {
       "rank": 277,
-      "name": "KingCowNat",
+      "name": "JoeyyPlays",
       "points": 93440,
       "regions": []
     },
@@ -8122,6 +8123,18 @@
     },
     {
       "rank": 299,
+      "name": "G_Wen",
+      "points": 92840,
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Asgarnia",
+        "Kandarin",
+        "Desert"
+      ]
+    },
+    {
+      "rank": 300,
       "name": "wapExile",
       "points": 92810,
       "regions": [
@@ -8133,13 +8146,13 @@
       ]
     },
     {
-      "rank": 300,
+      "rank": 301,
       "name": "IR_4S5A5S1N",
       "points": 92810,
       "regions": []
     },
     {
-      "rank": 301,
+      "rank": 302,
       "name": "Truly",
       "points": 92780,
       "regions": [
@@ -8151,19 +8164,19 @@
       ]
     },
     {
-      "rank": 302,
+      "rank": 303,
       "name": "Rhett Ford",
       "points": 92760,
       "regions": []
     },
     {
-      "rank": 303,
+      "rank": 304,
       "name": "Young Delta",
       "points": 92760,
       "regions": []
     },
     {
-      "rank": 304,
+      "rank": 305,
       "name": "Iron Old Jay",
       "points": 92720,
       "regions": [
@@ -8175,7 +8188,7 @@
       ]
     },
     {
-      "rank": 305,
+      "rank": 306,
       "name": "Miracore",
       "points": 92680,
       "regions": [
@@ -8187,13 +8200,19 @@
       ]
     },
     {
-      "rank": 306,
+      "rank": 307,
       "name": "Royn",
       "points": 92640,
       "regions": []
     },
     {
-      "rank": 307,
+      "rank": 308,
+      "name": "Disaster Sr",
+      "points": 92640,
+      "regions": []
+    },
+    {
+      "rank": 309,
       "name": "llIIlllIll",
       "points": 92610,
       "regions": [
@@ -8205,7 +8224,7 @@
       ]
     },
     {
-      "rank": 308,
+      "rank": 310,
       "name": "SuperFlow",
       "points": 92610,
       "regions": [
@@ -8217,7 +8236,7 @@
       ]
     },
     {
-      "rank": 309,
+      "rank": 311,
       "name": "D4mon",
       "points": 92560,
       "regions": [
@@ -8229,31 +8248,31 @@
       ]
     },
     {
-      "rank": 310,
+      "rank": 312,
       "name": "bg bonqueror",
       "points": 92560,
       "regions": []
     },
     {
-      "rank": 311,
+      "rank": 313,
       "name": "Arckis",
       "points": 92560,
       "regions": []
     },
     {
-      "rank": 312,
+      "rank": 314,
       "name": "Noodlz II",
       "points": 92560,
       "regions": []
     },
     {
-      "rank": 313,
+      "rank": 315,
       "name": "Endorra",
       "points": 92560,
       "regions": []
     },
     {
-      "rank": 314,
+      "rank": 316,
       "name": "Lemon5000123",
       "points": 92440,
       "regions": [
@@ -8265,7 +8284,7 @@
       ]
     },
     {
-      "rank": 315,
+      "rank": 317,
       "name": "chanced man",
       "points": 92440,
       "regions": [
@@ -8277,7 +8296,7 @@
       ]
     },
     {
-      "rank": 316,
+      "rank": 318,
       "name": "bulborb",
       "points": 92440,
       "regions": [
@@ -8289,7 +8308,7 @@
       ]
     },
     {
-      "rank": 317,
+      "rank": 319,
       "name": "vanoreo_iron",
       "points": 92440,
       "regions": [
@@ -8301,19 +8320,31 @@
       ]
     },
     {
-      "rank": 318,
+      "rank": 320,
       "name": "Noname Nate",
       "points": 92440,
       "regions": []
     },
     {
-      "rank": 319,
+      "rank": 321,
+      "name": "GamSlav",
+      "points": 92440,
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Morytania",
+        "Tirannwn"
+      ]
+    },
+    {
+      "rank": 322,
       "name": "DR HYPE",
       "points": 92380,
       "regions": []
     },
     {
-      "rank": 320,
+      "rank": 323,
       "name": "SaekeaS",
       "points": 92360,
       "regions": [
@@ -8325,13 +8356,13 @@
       ]
     },
     {
-      "rank": 321,
+      "rank": 324,
       "name": "rooiegerr1t",
       "points": 92360,
       "regions": []
     },
     {
-      "rank": 322,
+      "rank": 325,
       "name": "OriIM",
       "points": 92340,
       "regions": [
@@ -8343,70 +8374,40 @@
       ]
     },
     {
-      "rank": 323,
+      "rank": 326,
       "name": "Ludicolo",
       "points": 92330,
       "regions": []
     },
     {
-      "rank": 324,
+      "rank": 327,
       "name": "TheKizzler",
       "points": 92330,
       "regions": []
     },
     {
-      "rank": 325,
+      "rank": 328,
       "name": "Mystery X",
       "points": 92280,
       "regions": []
     },
     {
-      "rank": 326,
+      "rank": 329,
       "name": "Vorkathchan",
       "points": 92280,
       "regions": []
     },
     {
-      "rank": 327,
-      "name": "G_Wen",
-      "points": 92280,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Asgarnia",
-        "Kandarin",
-        "Desert"
-      ]
-    },
-    {
-      "rank": 328,
-      "name": "Disaster Sr",
-      "points": 92240,
-      "regions": []
-    },
-    {
-      "rank": 329,
+      "rank": 330,
       "name": "EmeraldTask",
       "points": 92240,
       "regions": []
     },
     {
-      "rank": 330,
+      "rank": 331,
       "name": "aArmaa",
       "points": 92240,
       "regions": []
-    },
-    {
-      "rank": 331,
-      "name": "GamSlav",
-      "points": 92240,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Tirannwn"
-      ]
     },
     {
       "rank": 332,
@@ -8644,6 +8645,12 @@
     },
     {
       "rank": 359,
+      "name": "Drummerz",
+      "points": 91480,
+      "regions": []
+    },
+    {
+      "rank": 360,
       "name": "Zamorakussy",
       "points": 91440,
       "regions": [
@@ -8655,13 +8662,13 @@
       ]
     },
     {
-      "rank": 360,
+      "rank": 361,
       "name": "Glider",
       "points": 91440,
       "regions": []
     },
     {
-      "rank": 361,
+      "rank": 362,
       "name": "GIM Yas",
       "points": 91410,
       "regions": [
@@ -8673,43 +8680,43 @@
       ]
     },
     {
-      "rank": 362,
+      "rank": 363,
       "name": "jjiinnii",
       "points": 91400,
       "regions": []
     },
     {
-      "rank": 363,
+      "rank": 364,
       "name": "Xero n 123",
       "points": 91400,
       "regions": []
     },
     {
-      "rank": 364,
+      "rank": 365,
       "name": "bloodybuddy3",
       "points": 91390,
       "regions": []
     },
     {
-      "rank": 365,
+      "rank": 366,
       "name": "Streammz",
       "points": 91370,
       "regions": []
     },
     {
-      "rank": 366,
+      "rank": 367,
       "name": "PhobosDeimos",
       "points": 91330,
       "regions": []
     },
     {
-      "rank": 367,
+      "rank": 368,
       "name": "Magyk",
       "points": 91330,
       "regions": []
     },
     {
-      "rank": 368,
+      "rank": 369,
       "name": "Jamezilla",
       "points": 91280,
       "regions": [
@@ -8719,12 +8726,6 @@
         "Morytania",
         "Tirannwn"
       ]
-    },
-    {
-      "rank": 369,
-      "name": "Drummerz",
-      "points": 91280,
-      "regions": []
     },
     {
       "rank": 370,
@@ -8848,30 +8849,36 @@
     },
     {
       "rank": 387,
+      "name": "Jubbly Kebab",
+      "points": 91100,
+      "regions": []
+    },
+    {
+      "rank": 388,
       "name": "1337 RED",
       "points": 91040,
       "regions": []
     },
     {
-      "rank": 388,
+      "rank": 389,
       "name": "Umoran",
       "points": 91040,
       "regions": []
     },
     {
-      "rank": 389,
+      "rank": 390,
       "name": "Bhudha",
       "points": 91040,
       "regions": []
     },
     {
-      "rank": 390,
+      "rank": 391,
       "name": "Chunky Al",
       "points": 91040,
       "regions": []
     },
     {
-      "rank": 391,
+      "rank": 392,
       "name": "Nyhlo",
       "points": 91010,
       "regions": [
@@ -8883,13 +8890,13 @@
       ]
     },
     {
-      "rank": 392,
+      "rank": 393,
       "name": "UIMycologist",
       "points": 91010,
       "regions": []
     },
     {
-      "rank": 393,
+      "rank": 394,
       "name": "C4R3Y",
       "points": 91010,
       "regions": [
@@ -8901,25 +8908,25 @@
       ]
     },
     {
-      "rank": 394,
+      "rank": 395,
       "name": "Wengus",
       "points": 90960,
       "regions": []
     },
     {
-      "rank": 395,
+      "rank": 396,
       "name": "Shadow also",
       "points": 90960,
       "regions": []
     },
     {
-      "rank": 396,
+      "rank": 397,
       "name": "Kapamx",
       "points": 90960,
       "regions": []
     },
     {
-      "rank": 397,
+      "rank": 398,
       "name": "Piano Schmex",
       "points": 90950,
       "regions": [
@@ -8931,7 +8938,13 @@
       ]
     },
     {
-      "rank": 398,
+      "rank": 399,
+      "name": "mtjy",
+      "points": 90940,
+      "regions": []
+    },
+    {
+      "rank": 400,
       "name": "Jafang",
       "points": 90930,
       "regions": [
@@ -8943,7 +8956,7 @@
       ]
     },
     {
-      "rank": 399,
+      "rank": 401,
       "name": "Loosh",
       "points": 90900,
       "regions": [
@@ -8955,7 +8968,7 @@
       ]
     },
     {
-      "rank": 400,
+      "rank": 402,
       "name": "EvilAllAlone",
       "points": 90900,
       "regions": [
@@ -8967,7 +8980,7 @@
       ]
     },
     {
-      "rank": 401,
+      "rank": 403,
       "name": "56 Bunny 27",
       "points": 90860,
       "regions": [
@@ -8979,25 +8992,25 @@
       ]
     },
     {
-      "rank": 402,
+      "rank": 404,
       "name": "Tildeath IM",
       "points": 90850,
       "regions": []
     },
     {
-      "rank": 403,
+      "rank": 405,
       "name": "RYN16",
       "points": 90850,
       "regions": []
     },
     {
-      "rank": 404,
+      "rank": 406,
       "name": "TranceHead",
       "points": 90840,
       "regions": []
     },
     {
-      "rank": 405,
+      "rank": 407,
       "name": "AaronDY",
       "points": 90840,
       "regions": [
@@ -9009,13 +9022,13 @@
       ]
     },
     {
-      "rank": 406,
+      "rank": 408,
       "name": "P i t o e",
       "points": 90840,
       "regions": []
     },
     {
-      "rank": 407,
+      "rank": 409,
       "name": "Fish Dish",
       "points": 90800,
       "regions": [
@@ -9027,13 +9040,13 @@
       ]
     },
     {
-      "rank": 408,
+      "rank": 410,
       "name": "MainNatsulus",
       "points": 90800,
       "regions": []
     },
     {
-      "rank": 409,
+      "rank": 411,
       "name": "Ph0fz PvE",
       "points": 90780,
       "regions": [
@@ -9045,25 +9058,25 @@
       ]
     },
     {
-      "rank": 410,
+      "rank": 412,
       "name": "Bekir01",
       "points": 90780,
       "regions": []
     },
     {
-      "rank": 411,
+      "rank": 413,
       "name": "Eepy Emilia",
       "points": 90760,
       "regions": []
     },
     {
-      "rank": 412,
+      "rank": 414,
       "name": "R ya n",
       "points": 90760,
       "regions": []
     },
     {
-      "rank": 413,
+      "rank": 415,
       "name": "Hoppip",
       "points": 90740,
       "regions": [
@@ -9075,7 +9088,7 @@
       ]
     },
     {
-      "rank": 414,
+      "rank": 416,
       "name": "Torgasun",
       "points": 90740,
       "regions": [
@@ -9087,13 +9100,13 @@
       ]
     },
     {
-      "rank": 415,
+      "rank": 417,
       "name": "group0n",
       "points": 90730,
       "regions": []
     },
     {
-      "rank": 416,
+      "rank": 418,
       "name": "Bittykin",
       "points": 90730,
       "regions": [
@@ -9105,7 +9118,7 @@
       ]
     },
     {
-      "rank": 417,
+      "rank": 419,
       "name": "K e vin",
       "points": 90700,
       "regions": [
@@ -9117,7 +9130,7 @@
       ]
     },
     {
-      "rank": 418,
+      "rank": 420,
       "name": "WaterLayMon",
       "points": 90670,
       "regions": [
@@ -9129,7 +9142,7 @@
       ]
     },
     {
-      "rank": 419,
+      "rank": 421,
       "name": "Snoop Rs",
       "points": 90650,
       "regions": [
@@ -9141,13 +9154,13 @@
       ]
     },
     {
-      "rank": 420,
+      "rank": 422,
       "name": "fkrs",
       "points": 90650,
       "regions": []
     },
     {
-      "rank": 421,
+      "rank": 423,
       "name": "Gertheroy",
       "points": 90640,
       "regions": [
@@ -9159,7 +9172,7 @@
       ]
     },
     {
-      "rank": 422,
+      "rank": 424,
       "name": "L6 xip",
       "points": 90640,
       "regions": [
@@ -9171,7 +9184,7 @@
       ]
     },
     {
-      "rank": 423,
+      "rank": 425,
       "name": "Torresmo",
       "points": 90640,
       "regions": [
@@ -9183,7 +9196,7 @@
       ]
     },
     {
-      "rank": 424,
+      "rank": 426,
       "name": "infra low",
       "points": 90570,
       "regions": [
@@ -9195,43 +9208,43 @@
       ]
     },
     {
-      "rank": 425,
+      "rank": 427,
       "name": "Ashleyy",
       "points": 90570,
       "regions": []
     },
     {
-      "rank": 426,
+      "rank": 428,
       "name": "Suhppliedr",
       "points": 90560,
       "regions": []
     },
     {
-      "rank": 427,
+      "rank": 429,
       "name": "Parikh",
       "points": 90500,
       "regions": []
     },
     {
-      "rank": 428,
+      "rank": 430,
       "name": "734590325839",
       "points": 90480,
       "regions": []
     },
     {
-      "rank": 429,
+      "rank": 431,
       "name": "alaxam",
       "points": 90480,
       "regions": []
     },
     {
-      "rank": 430,
+      "rank": 432,
       "name": "F irestar",
       "points": 90480,
       "regions": []
     },
     {
-      "rank": 431,
+      "rank": 433,
       "name": "Spuhcific",
       "points": 90450,
       "regions": [
@@ -9243,25 +9256,25 @@
       ]
     },
     {
-      "rank": 432,
+      "rank": 434,
       "name": "Fronk",
       "points": 90440,
       "regions": []
     },
     {
-      "rank": 433,
+      "rank": 435,
       "name": "OdaFera",
       "points": 90360,
       "regions": []
     },
     {
-      "rank": 434,
+      "rank": 436,
       "name": "WheresMyRNG",
       "points": 90350,
       "regions": []
     },
     {
-      "rank": 435,
+      "rank": 437,
       "name": "BB-61",
       "points": 90340,
       "regions": [
@@ -9273,20 +9286,8 @@
       ]
     },
     {
-      "rank": 436,
-      "name": "mtjy",
-      "points": 90340,
-      "regions": []
-    },
-    {
-      "rank": 437,
-      "name": "Zalphyrus",
-      "points": 90300,
-      "regions": []
-    },
-    {
       "rank": 438,
-      "name": "Jubbly Kebab",
+      "name": "Zalphyrus",
       "points": 90300,
       "regions": []
     },
@@ -9340,18 +9341,24 @@
     },
     {
       "rank": 446,
+      "name": "Lemme HM06",
+      "points": 90220,
+      "regions": []
+    },
+    {
+      "rank": 447,
       "name": "arenae2",
       "points": 90210,
       "regions": []
     },
     {
-      "rank": 447,
+      "rank": 448,
       "name": "SirPryznSusa",
       "points": 90210,
       "regions": []
     },
     {
-      "rank": 448,
+      "rank": 449,
       "name": "t u k e",
       "points": 90180,
       "regions": [
@@ -9363,7 +9370,7 @@
       ]
     },
     {
-      "rank": 449,
+      "rank": 450,
       "name": "Kandalf",
       "points": 90170,
       "regions": [
@@ -9375,25 +9382,25 @@
       ]
     },
     {
-      "rank": 450,
+      "rank": 451,
       "name": "Voidlords",
       "points": 90140,
       "regions": []
     },
     {
-      "rank": 451,
+      "rank": 452,
       "name": "Krety",
       "points": 90130,
       "regions": []
     },
     {
-      "rank": 452,
+      "rank": 453,
       "name": "Neztea",
       "points": 90120,
       "regions": []
     },
     {
-      "rank": 453,
+      "rank": 454,
       "name": "Smurfboard",
       "points": 90090,
       "regions": [
@@ -9405,13 +9412,13 @@
       ]
     },
     {
-      "rank": 454,
+      "rank": 455,
       "name": "Timedjelly",
       "points": 90080,
       "regions": []
     },
     {
-      "rank": 455,
+      "rank": 456,
       "name": "TazikiE",
       "points": 90060,
       "regions": [
@@ -9423,25 +9430,25 @@
       ]
     },
     {
-      "rank": 456,
+      "rank": 457,
       "name": "Figen",
       "points": 90050,
       "regions": []
     },
     {
-      "rank": 457,
+      "rank": 458,
       "name": "GIM Solarce",
       "points": 90040,
       "regions": []
     },
     {
-      "rank": 458,
+      "rank": 459,
       "name": "M imik",
       "points": 90040,
       "regions": []
     },
     {
-      "rank": 459,
+      "rank": 460,
       "name": "Laffy Taffy",
       "points": 90040,
       "regions": [
@@ -9453,7 +9460,7 @@
       ]
     },
     {
-      "rank": 460,
+      "rank": 461,
       "name": "Sqirttle",
       "points": 90040,
       "regions": [
@@ -9465,7 +9472,7 @@
       ]
     },
     {
-      "rank": 461,
+      "rank": 462,
       "name": "J uun",
       "points": 90030,
       "regions": [
@@ -9477,7 +9484,7 @@
       ]
     },
     {
-      "rank": 462,
+      "rank": 463,
       "name": "Quest Plug",
       "points": 90030,
       "regions": [
@@ -9489,7 +9496,7 @@
       ]
     },
     {
-      "rank": 463,
+      "rank": 464,
       "name": "Syh",
       "points": 90030,
       "regions": [
@@ -9501,7 +9508,7 @@
       ]
     },
     {
-      "rank": 464,
+      "rank": 465,
       "name": "Xtreme Log",
       "points": 90020,
       "regions": [
@@ -9513,7 +9520,13 @@
       ]
     },
     {
-      "rank": 465,
+      "rank": 466,
+      "name": "Jude Bayer",
+      "points": 90020,
+      "regions": []
+    },
+    {
+      "rank": 467,
       "name": "RudeTheTurk",
       "points": 90010,
       "regions": [
@@ -9525,7 +9538,7 @@
       ]
     },
     {
-      "rank": 466,
+      "rank": 468,
       "name": "BIGD05",
       "points": 90010,
       "regions": [
@@ -9537,13 +9550,13 @@
       ]
     },
     {
-      "rank": 467,
+      "rank": 469,
       "name": "Snorbler",
       "points": 90010,
       "regions": []
     },
     {
-      "rank": 468,
+      "rank": 470,
       "name": "TYC Beatrice",
       "points": 90000,
       "regions": [
@@ -9555,7 +9568,7 @@
       ]
     },
     {
-      "rank": 469,
+      "rank": 471,
       "name": "Typo Negativ",
       "points": 90000,
       "regions": [
@@ -9567,7 +9580,7 @@
       ]
     },
     {
-      "rank": 470,
+      "rank": 472,
       "name": "Dc IronMan",
       "points": 90000,
       "regions": [
@@ -9579,7 +9592,7 @@
       ]
     },
     {
-      "rank": 471,
+      "rank": 473,
       "name": "Ugh Leagues",
       "points": 90000,
       "regions": [
@@ -9591,7 +9604,7 @@
       ]
     },
     {
-      "rank": 472,
+      "rank": 474,
       "name": "Julixi",
       "points": 90000,
       "regions": [
@@ -9603,13 +9616,13 @@
       ]
     },
     {
-      "rank": 473,
+      "rank": 475,
       "name": "Half a Worm",
       "points": 90000,
       "regions": []
     },
     {
-      "rank": 474,
+      "rank": 476,
       "name": "Neoer Neoz",
       "points": 90000,
       "regions": [
@@ -9621,49 +9634,49 @@
       ]
     },
     {
-      "rank": 475,
+      "rank": 477,
       "name": "Witherwingz",
       "points": 90000,
       "regions": []
     },
     {
-      "rank": 476,
+      "rank": 478,
       "name": "JGs 9 Inch D",
       "points": 90000,
       "regions": []
     },
     {
-      "rank": 477,
+      "rank": 479,
       "name": "kVolue",
       "points": 89960,
       "regions": []
     },
     {
-      "rank": 478,
+      "rank": 480,
       "name": "fwapdokopjai",
       "points": 89930,
       "regions": []
     },
     {
-      "rank": 479,
+      "rank": 481,
       "name": "5st",
       "points": 89930,
       "regions": []
     },
     {
-      "rank": 480,
+      "rank": 482,
       "name": "Planks at P2",
       "points": 89880,
       "regions": []
     },
     {
-      "rank": 481,
+      "rank": 483,
       "name": "Helesta",
       "points": 89850,
       "regions": []
     },
     {
-      "rank": 482,
+      "rank": 484,
       "name": "eepy eggo",
       "points": 89840,
       "regions": [
@@ -9675,13 +9688,13 @@
       ]
     },
     {
-      "rank": 483,
+      "rank": 485,
       "name": "Macewindi",
       "points": 89820,
       "regions": []
     },
     {
-      "rank": 484,
+      "rank": 486,
       "name": "Fun To Kill",
       "points": 89810,
       "regions": [
@@ -9693,7 +9706,7 @@
       ]
     },
     {
-      "rank": 485,
+      "rank": 487,
       "name": "Typhlosion",
       "points": 89760,
       "regions": [
@@ -9705,19 +9718,19 @@
       ]
     },
     {
-      "rank": 486,
+      "rank": 488,
       "name": "bosy mazino",
       "points": 89760,
       "regions": []
     },
     {
-      "rank": 487,
+      "rank": 489,
       "name": "Kay Dee",
       "points": 89760,
       "regions": []
     },
     {
-      "rank": 488,
+      "rank": 490,
       "name": "Gwynrwyn",
       "points": 89740,
       "regions": [
@@ -9729,82 +9742,64 @@
       ]
     },
     {
-      "rank": 489,
+      "rank": 491,
       "name": "ah rio",
       "points": 89730,
       "regions": []
     },
     {
-      "rank": 490,
+      "rank": 492,
+      "name": "Softis666",
+      "points": 89730,
+      "regions": []
+    },
+    {
+      "rank": 493,
       "name": "Lyp",
       "points": 89690,
       "regions": []
     },
     {
-      "rank": 491,
+      "rank": 494,
       "name": "Theracords",
       "points": 89670,
       "regions": []
     },
     {
-      "rank": 492,
+      "rank": 495,
       "name": "Cammuravi",
       "points": 89640,
       "regions": []
     },
     {
-      "rank": 493,
+      "rank": 496,
       "name": "Artisimber",
       "points": 89560,
       "regions": []
     },
     {
-      "rank": 494,
+      "rank": 497,
       "name": "Porgly",
       "points": 89540,
       "regions": []
     },
     {
-      "rank": 495,
+      "rank": 498,
       "name": "On Timing",
       "points": 89480,
       "regions": []
     },
     {
-      "rank": 496,
+      "rank": 499,
       "name": "Tasktician",
       "points": 89460,
       "regions": []
     },
     {
-      "rank": 497,
+      "rank": 500,
       "name": "Lilpaleo",
       "points": 89420,
       "regions": []
-    },
-    {
-      "rank": 498,
-      "name": "Jude Bayer",
-      "points": 89420,
-      "regions": []
-    },
-    {
-      "rank": 499,
-      "name": "ResidentEvil",
-      "points": 89400,
-      "regions": []
-    },
-    {
-      "rank": 500,
-      "name": "kebabwfries",
-      "points": 89310,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
     }
   ]
 }
