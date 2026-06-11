@@ -5251,7 +5251,13 @@
       "Tirannwn",
       "Kebos and Kourend"
     ],
-    "CD Slay3r": [],
+    "CD Slay3r": [
+      "Varlamore",
+      "Karamja",
+      "Asgarnia",
+      "Desert",
+      "Wilderness"
+    ],
     "StatueLeft": [],
     "Icetea lemon": [],
     "Most Def Dry": [],
@@ -5355,7 +5361,15 @@
       "Asgarnia",
       "Wilderness",
       "Kebos and Kourend"
-    ]
+    ],
+    "Brunchislife": [],
+    "Ducks of War": [],
+    "Mistoltin": [],
+    "Yorthundir": [],
+    "Reject q p": [],
+    "Color TV": [],
+    "Goose Me": [],
+    "KovGamer": []
   },
   "leaderboard": [
     {
@@ -9868,7 +9882,13 @@
       "rank": 466,
       "name": "CD Slay3r",
       "points": 91680,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Asgarnia",
+        "Desert",
+        "Wilderness"
+      ]
     },
     {
       "rank": 467,
