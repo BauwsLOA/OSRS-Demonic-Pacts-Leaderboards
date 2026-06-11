@@ -5334,6 +5334,27 @@
       "Kandarin",
       "Morytania",
       "Kebos and Kourend"
+    ],
+    "Ronny2170": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Wilderness",
+      "Kebos and Kourend"
+    ],
+    "DLee188": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Desert",
+      "Kebos and Kourend"
+    ],
+    "Ceio": [
+      "Varlamore",
+      "Karamja",
+      "Asgarnia",
+      "Wilderness",
+      "Kebos and Kourend"
     ]
   },
   "leaderboard": [
@@ -9793,7 +9814,13 @@
       "rank": 460,
       "name": "Ronny2170",
       "points": 91840,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Wilderness",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 461,
@@ -9925,7 +9952,13 @@
       "rank": 476,
       "name": "DLee188",
       "points": 91610,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Desert",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 477,
@@ -10057,7 +10090,13 @@
       "rank": 492,
       "name": "Ceio",
       "points": 91400,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Asgarnia",
+        "Wilderness",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 493,
