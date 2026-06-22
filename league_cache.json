@@ -4024,7 +4024,13 @@
       "Kebos and Kourend"
     ],
     "The OSU": [],
-    "O o g a": [],
+    "O o g a": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ],
     "UIM Cache": [],
     "Iron Bong": [],
     "Superfire444": [],
@@ -7106,7 +7112,13 @@
       "rank": 149,
       "name": "O o g a",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Tirannwn",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 150,
