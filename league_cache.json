@@ -4766,7 +4766,13 @@
     "Ashleyy": [],
     "arenae2": [],
     "A Windmill": [],
-    "Bae-Kun8er": [],
+    "Bae-Kun8er": [
+      "Varlamore",
+      "Karamja",
+      "Asgarnia",
+      "Kandarin",
+      "Kebos and Kourend"
+    ],
     "Foesum": [],
     "thrally hood": [],
     "Julixi": [
@@ -7437,7 +7443,13 @@
       "rank": 189,
       "name": "Bae-Kun8er",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Asgarnia",
+        "Kandarin",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 190,
