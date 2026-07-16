@@ -5392,7 +5392,8 @@
       "Kandarin",
       "Tirannwn",
       "Kebos and Kourend"
-    ]
+    ],
+    "Ferroath": []
   },
   "leaderboard": [
     {
@@ -6417,15 +6418,9 @@
     },
     {
       "rank": 86,
-      "name": "Ferrothan",
+      "name": "Ferroath",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 87,
