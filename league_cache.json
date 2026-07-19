@@ -5393,7 +5393,8 @@
       "Tirannwn",
       "Kebos and Kourend"
     ],
-    "Ferroath": []
+    "Ferroath": [],
+    "Ret ro": []
   },
   "leaderboard": [
     {
@@ -7462,15 +7463,9 @@
     },
     {
       "rank": 191,
-      "name": "Remtro",
+      "name": "Ret ro",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Tirannwn"
-      ]
+      "regions": []
     },
     {
       "rank": 192,
