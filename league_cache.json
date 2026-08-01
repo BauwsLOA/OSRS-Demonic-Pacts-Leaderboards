@@ -5394,7 +5394,8 @@
       "Kebos and Kourend"
     ],
     "Ferroath": [],
-    "Ret ro": []
+    "Ret ro": [],
+    "YourGooning": []
   },
   "leaderboard": [
     {
@@ -6935,15 +6936,9 @@
     },
     {
       "rank": 130,
-      "name": "SeaMenIron",
+      "name": "YourGooning",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Tirannwn"
-      ]
+      "regions": []
     },
     {
       "rank": 131,
