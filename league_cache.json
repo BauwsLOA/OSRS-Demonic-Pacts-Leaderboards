@@ -6936,9 +6936,15 @@
     },
     {
       "rank": 130,
-      "name": "YourGooning",
+      "name": "SeaMenIron",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Morytania",
+        "Tirannwn"
+      ]
     },
     {
       "rank": 131,
