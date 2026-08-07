@@ -5395,7 +5395,15 @@
     ],
     "Ferroath": [],
     "Ret ro": [],
-    "YourGooning": []
+    "YourGooning": [],
+    "Tourma T": [],
+    "albm": [
+      "Varlamore",
+      "Karamja",
+      "Morytania",
+      "Tirannwn",
+      "Wilderness"
+    ]
   },
   "leaderboard": [
     {
@@ -10016,7 +10024,13 @@
       "rank": 478,
       "name": "albm",
       "points": 91580,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Morytania",
+        "Tirannwn",
+        "Wilderness"
+      ]
     },
     {
       "rank": 479,
