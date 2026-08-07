@@ -5019,7 +5019,13 @@
     "Late 0 Coins": [],
     "Young Delta": [],
     "Alex Is Hard": [],
-    "Buff Tornado": [],
+    "Buff Tornado": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ],
     "Tildeath IM": [],
     "Ghoam": [
       "Varlamore",
@@ -7780,7 +7786,13 @@
       "rank": 224,
       "name": "Buff Tornado",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Tirannwn",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 225,
