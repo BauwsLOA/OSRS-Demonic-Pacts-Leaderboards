@@ -8054,9 +8054,15 @@
     },
     {
       "rank": 254,
-      "name": "Lewitch",
+      "name": "rsrs",
       "points": 96010,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Morytania",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 255,
