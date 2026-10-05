@@ -5421,7 +5421,8 @@
       "Kandarin",
       "Tirannwn",
       "Kebos and Kourend"
-    ]
+    ],
+    "AlexIsSoft": []
   },
   "leaderboard": [
     {
@@ -8204,7 +8205,7 @@
     },
     {
       "rank": 268,
-      "name": "Alex Is Hard",
+      "name": "AlexIsSoft",
       "points": 95610,
       "regions": []
     },
