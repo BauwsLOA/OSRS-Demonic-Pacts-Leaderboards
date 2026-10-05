@@ -5422,7 +5422,8 @@
       "Tirannwn",
       "Kebos and Kourend"
     ],
-    "AlexIsSoft": []
+    "AlexIsSoft": [],
+    "Maggotgate": []
   },
   "leaderboard": [
     {
@@ -5727,15 +5728,9 @@
     },
     {
       "rank": 26,
-      "name": "Gl Im Tom",
+      "name": "Maggotgate",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 27,
