@@ -5423,7 +5423,8 @@
       "Kebos and Kourend"
     ],
     "AlexIsSoft": [],
-    "Maggotgate": []
+    "Maggotgate": [],
+    "corps nut": []
   },
   "leaderboard": [
     {
@@ -5668,15 +5669,9 @@
     },
     {
       "rank": 21,
-      "name": "gregs nut",
+      "name": "corps nut",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 22,
