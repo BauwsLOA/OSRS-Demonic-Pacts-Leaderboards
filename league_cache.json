@@ -2724,7 +2724,13 @@
       "Morytania",
       "Tirannwn"
     ],
-    "eL Destroyer": [],
+    "eL Destroyer": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ],
     "Lucky when": [],
     "A Dumb Rat": [
       "Varlamore",
@@ -7886,7 +7892,13 @@
       "rank": 236,
       "name": "eL Destroyer",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Tirannwn",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 237,
