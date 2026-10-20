@@ -5432,7 +5432,8 @@
     "Maggotgate": [],
     "corps nut": [],
     "PhosaniSpoon": [],
-    "OBLV GOODBOY": []
+    "OBLV GOODBOY": [],
+    "VeryValuable": []
   },
   "leaderboard": [
     {
@@ -5773,15 +5774,9 @@
     },
     {
       "rank": 30,
-      "name": "KiwiIskadda",
+      "name": "VeryValuable",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 31,
