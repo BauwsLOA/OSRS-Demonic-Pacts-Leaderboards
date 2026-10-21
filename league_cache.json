@@ -5433,7 +5433,8 @@
     "corps nut": [],
     "PhosaniSpoon": [],
     "OBLV GOODBOY": [],
-    "VeryValuable": []
+    "VeryValuable": [],
+    "Faith ed": []
   },
   "leaderboard": [
     {
@@ -7790,15 +7791,9 @@
     },
     {
       "rank": 224,
-      "name": "Buff Tornado",
+      "name": "Faith ed",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 225,
