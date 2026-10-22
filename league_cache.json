@@ -5441,7 +5441,8 @@
     ],
     "VeryValuable": [],
     "Faith ed": [],
-    "Seananegans": []
+    "Seananegans": [],
+    "ObLv GaToR": []
   },
   "leaderboard": [
     {
@@ -5470,15 +5471,9 @@
     },
     {
       "rank": 3,
-      "name": "crueship",
+      "name": "ObLv GaToR",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 4,
