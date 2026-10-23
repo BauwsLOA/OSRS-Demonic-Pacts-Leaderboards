@@ -5441,7 +5441,13 @@
     ],
     "VeryValuable": [],
     "Faith ed": [],
-    "Seananegans": [],
+    "Seananegans": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ],
     "ObLv GaToR": []
   },
   "leaderboard": [
@@ -6283,7 +6289,13 @@
       "rank": 72,
       "name": "Seananegans",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Tirannwn",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 73,
