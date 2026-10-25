@@ -5478,9 +5478,15 @@
     },
     {
       "rank": 3,
-      "name": "ObLv GaToR",
+      "name": "crueship",
       "points": 96040,
-      "regions": []
+      "regions": [
+        "Varlamore",
+        "Karamja",
+        "Kandarin",
+        "Tirannwn",
+        "Kebos and Kourend"
+      ]
     },
     {
       "rank": 4,
