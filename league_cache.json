@@ -5453,7 +5453,11 @@
     "InsaneMurt": [],
     "Sir Bepi": [],
     "Suqmah Zick": [],
-    "Nood1z": []
+    "Nood1z": [],
+    "abuja": [],
+    "Lorenzomans": [],
+    "igans": [],
+    "B4RRY": []
   },
   "leaderboard": [
     {
@@ -6796,15 +6800,9 @@
     },
     {
       "rank": 114,
-      "name": "ass chance",
+      "name": "abuja",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Asgarnia",
-        "Kandarin",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 115,
@@ -7864,7 +7862,7 @@
     },
     {
       "rank": 231,
-      "name": "Alt Zihark",
+      "name": "Lorenzomans",
       "points": 96040,
       "regions": []
     },
@@ -7906,7 +7904,7 @@
     },
     {
       "rank": 237,
-      "name": "Kyuuman",
+      "name": "igans",
       "points": 96040,
       "regions": []
     },
@@ -8218,7 +8216,7 @@
     },
     {
       "rank": 269,
-      "name": "Den Barry",
+      "name": "B4RRY",
       "points": 95580,
       "regions": []
     },
