@@ -5461,7 +5461,9 @@
     "A Kingo": [],
     "Dandy Darrin": [],
     "LayMon": [],
-    "Andv": []
+    "Andv": [],
+    "Baji": [],
+    "bowed": []
   },
   "leaderboard": [
     {
@@ -6126,15 +6128,9 @@
     },
     {
       "rank": 57,
-      "name": "Anglerfish43",
+      "name": "Baji",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 58,
@@ -6516,15 +6512,9 @@
     },
     {
       "rank": 90,
-      "name": "ZOKUZOKU",
+      "name": "bowed",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 91,
@@ -9390,7 +9380,7 @@
     },
     {
       "rank": 406,
-      "name": "IM Andre",
+      "name": "Branco",
       "points": 92740,
       "regions": []
     },
