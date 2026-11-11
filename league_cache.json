@@ -5473,7 +5473,9 @@
     "coined": [],
     "Branco": [],
     "Climaxer": [],
-    "Chunka": []
+    "Chunka": [],
+    "Ferrus": [],
+    "fatalities": []
   },
   "leaderboard": [
     {
@@ -6480,7 +6482,7 @@
     },
     {
       "rank": 86,
-      "name": "Ferroath",
+      "name": "Ferrus",
       "points": 96040,
       "regions": []
     },
@@ -7212,7 +7214,7 @@
     },
     {
       "rank": 154,
-      "name": "Abstand",
+      "name": "fatalities",
       "points": 96040,
       "regions": []
     },
