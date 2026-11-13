@@ -5477,7 +5477,15 @@
     "Ferrus": [],
     "fatalities": [],
     "Bork feet": [],
-    "HappyFeat": []
+    "HappyFeat": [],
+    "Iron Laura": [],
+    "Fermat": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ]
   },
   "leaderboard": [
     {
@@ -6184,15 +6192,9 @@
     },
     {
       "rank": 61,
-      "name": "Iron Laura1",
+      "name": "Iron Laura",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 62,
@@ -7408,7 +7410,7 @@
     },
     {
       "rank": 181,
-      "name": "Hecke",
+      "name": "Fermat",
       "points": 96040,
       "regions": [
         "Varlamore",
