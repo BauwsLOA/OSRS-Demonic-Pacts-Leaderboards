@@ -5485,7 +5485,8 @@
       "Kandarin",
       "Tirannwn",
       "Kebos and Kourend"
-    ]
+    ],
+    "Xarxa": []
   },
   "leaderboard": [
     {
@@ -7908,15 +7909,9 @@
     },
     {
       "rank": 238,
-      "name": "Xaxantes",
+      "name": "Xarxa",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Asgarnia",
-        "Wilderness",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 239,
