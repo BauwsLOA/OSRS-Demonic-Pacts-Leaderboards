@@ -5486,7 +5486,9 @@
       "Tirannwn",
       "Kebos and Kourend"
     ],
-    "Xarxa": []
+    "Xarxa": [],
+    "Lefts": [],
+    "Karel Gott": []
   },
   "leaderboard": [
     {
@@ -8101,7 +8103,7 @@
     },
     {
       "rank": 256,
-      "name": "Lfts",
+      "name": "Lefts",
       "points": 95840,
       "regions": []
     },
@@ -8503,15 +8505,9 @@
     },
     {
       "rank": 300,
-      "name": "PureUanubis",
+      "name": "Karel Gott",
       "points": 94840,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Wilderness",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 301,
@@ -9943,15 +9939,9 @@
     },
     {
       "rank": 468,
-      "name": "LazyFkTurtle",
+      "name": "Lazy Turtlez",
       "points": 91640,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 469,
