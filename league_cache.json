@@ -5488,7 +5488,8 @@
     ],
     "Xarxa": [],
     "Lefts": [],
-    "Karel Gott": []
+    "Karel Gott": [],
+    "Mirths": []
   },
   "leaderboard": [
     {
@@ -7365,7 +7366,7 @@
     },
     {
       "rank": 174,
-      "name": "Mirthfully",
+      "name": "Mirths",
       "points": 96040,
       "regions": []
     },
@@ -8751,15 +8752,9 @@
     },
     {
       "rank": 330,
-      "name": "MrMonsterous",
+      "name": "Monsterouss",
       "points": 94300,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 331,
@@ -9393,7 +9388,7 @@
     },
     {
       "rank": 406,
-      "name": "Branco",
+      "name": "Meg Thomas",
       "points": 92740,
       "regions": []
     },
@@ -10131,15 +10126,9 @@
     },
     {
       "rank": 491,
-      "name": "iDeadmen",
+      "name": "Mowin",
       "points": 91400,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Tirannwn"
-      ]
+      "regions": []
     },
     {
       "rank": 492,
