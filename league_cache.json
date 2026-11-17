@@ -5489,7 +5489,9 @@
     "Xarxa": [],
     "Lefts": [],
     "Karel Gott": [],
-    "Mirths": []
+    "Mirths": [],
+    "Magnii": [],
+    "Monsterouss": []
   },
   "leaderboard": [
     {
@@ -7138,7 +7140,7 @@
     },
     {
       "rank": 145,
-      "name": "Magniii",
+      "name": "Magnii",
       "points": 96040,
       "regions": []
     },
@@ -9004,15 +9006,9 @@
     },
     {
       "rank": 359,
-      "name": "rautsa123",
+      "name": "Rautsa",
       "points": 93760,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Morytania",
-        "Tirannwn"
-      ]
+      "regions": []
     },
     {
       "rank": 360,
@@ -9280,7 +9276,7 @@
     },
     {
       "rank": 393,
-      "name": "InsaneMurt",
+      "name": "Murtt",
       "points": 92840,
       "regions": []
     },
@@ -9388,7 +9384,7 @@
     },
     {
       "rank": 406,
-      "name": "Meg Thomas",
+      "name": "Drezin",
       "points": 92740,
       "regions": []
     },
