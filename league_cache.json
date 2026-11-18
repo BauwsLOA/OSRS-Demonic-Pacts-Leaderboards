@@ -5493,7 +5493,18 @@
     "Magnii": [],
     "Monsterouss": [],
     "lo dps": [],
-    "Lazy Turtlez": []
+    "Lazy Turtlez": [],
+    "lu cas": [
+      "Varlamore",
+      "Karamja",
+      "Kandarin",
+      "Tirannwn",
+      "Kebos and Kourend"
+    ],
+    "Noodly": [],
+    "Rautsa": [],
+    "Murtt": [],
+    "Drezin": []
   },
   "leaderboard": [
     {
@@ -6596,7 +6607,7 @@
     },
     {
       "rank": 95,
-      "name": "Ostermark",
+      "name": "lu cas",
       "points": 96040,
       "regions": [
         "Varlamore",
@@ -8618,7 +8629,7 @@
     },
     {
       "rank": 313,
-      "name": "Nood1z",
+      "name": "Noodly",
       "points": 94640,
       "regions": []
     },
