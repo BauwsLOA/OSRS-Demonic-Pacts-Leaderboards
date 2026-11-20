@@ -5504,7 +5504,8 @@
     "Noodly": [],
     "Rautsa": [],
     "Murtt": [],
-    "Drezin": []
+    "Drezin": [],
+    "Rolha": []
   },
   "leaderboard": [
     {
@@ -5779,15 +5780,9 @@
     },
     {
       "rank": 24,
-      "name": "Baaze",
+      "name": "Rolha",
       "points": 96040,
-      "regions": [
-        "Varlamore",
-        "Karamja",
-        "Kandarin",
-        "Tirannwn",
-        "Kebos and Kourend"
-      ]
+      "regions": []
     },
     {
       "rank": 25,
