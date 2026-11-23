@@ -5506,7 +5506,9 @@
     "Murtt": [],
     "Drezin": [],
     "Rolha": [],
-    "Neyth": []
+    "Neyth": [],
+    "szn": [],
+    "suqmah": []
   },
   "leaderboard": [
     {
@@ -6555,7 +6557,7 @@
     },
     {
       "rank": 90,
-      "name": "coined",
+      "name": "szn",
       "points": 96040,
       "regions": []
     },
@@ -7209,7 +7211,7 @@
     },
     {
       "rank": 150,
-      "name": "Suqmah Zick",
+      "name": "suqmah",
       "points": 96040,
       "regions": []
     },
@@ -9399,7 +9401,7 @@
     },
     {
       "rank": 406,
-      "name": "rising sun",
+      "name": "Rising Sun",
       "points": 92740,
       "regions": []
     },
